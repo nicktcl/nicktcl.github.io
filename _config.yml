@@ -1,5 +1,5 @@
 # Site settings
-title: 唐传林
+title: 唐传林的博客
 SEOTitle: 唐传林的博客 | Nick Blog
 header-img: img/home-bg.jpg
 email: liluxinios@gmail.com
@@ -71,10 +71,10 @@ netease_comment: false
 gitalk:
    enable: true
    owner: Nick
-   repo: Nick.github.io
-   clientID: 3e12c08c2ec52afbcb30
-   clientSecret: c2a74d279e7b42cf782a1d2d1b5a410d27c5ab57
-   admin: Nick
+   repo: nicktcl.github.io
+#   clientID: 3e12c08c2ec52afbcb30
+#   clientSecret: c2a74d279e7b42cf782a1d2d1b5a410d27c5ab57
+#   admin: Nick
 
 
 # Analytics settings
