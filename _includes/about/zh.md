@@ -1,31 +1,52 @@
-> 写写代码，做做设计，  
-> 离开世界之前，一切都是过程。
+> 写写代码,摄摄影;
+> 生活有时候需要一点仪式感💪;
 
-Hey，我是黄玄，病毒种，进化程度不明，多出没于[博客](https://huangxuan.me)、[微博](weibo.com/huxpro)、[知乎](https://www.zhihu.com/people/huxpro/pins/posts)、[Twitter](https://twitter.com/Huxpro/)、[Github](http://github.com/huxpro)、[Medium](https://medium.com/@Huxpro) 等地带，绝招尚在开发中。
+我是一之笔,16年10月跟大学同学合伙创办了一家公司:[西安道生化工科技有限公司](https://www.6chemical.com/)
 
-职业是软件工程师，[Web 工会](https://medium.com/ben-and-dion/team-web-3315aa447fb2#.359a9c6cl)活跃成员。目前在 [Facebook](https://www.facebook.com/) 写 [Reason](https://reasonml.github.io/) 与 [Messenger.com](http://messenger.com/) ，曾被招募为淘宝网 · [阿里旅行](http://alitrip.com)前端工程师、微影时代 · [微票儿](http://www.wepiao.com/?r=movie)前端基础工程团队负责人、[饿了么](https://ele.me/) · 大前端团队 · [PWA 顾问](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509)。
+其次,我是一个 iOS coder，喜欢研究一些新技术,致力于 自由职业者;
 
-一些作品和开源软件项目，👉 戳 [Portfolio](/portfolio)、[Github](http://github.com/huxpro)、[演说.io](https://zhuanlan.zhihu.com/p/21280918)。 
+平时喜欢整理个人博客，逛逛技术论坛,喜欢摄影。
+
+> 我迷失了自己
+
+曾经,我跟很多人一样,技术开发,坐着做着,就感觉未来很迷茫;不知道方向在哪里? 😯,I know, I lost myself;
+我迷失了自己,我努力找回自己,我在内心呐喊一遍遍,我该咋办?
+最终,我打算重新拾起自己的博客,换了一个主题,重新开始,重新燃起生活的斗志;
 
 
-##### Talks
+> 关于本站
 
-- [Upgrading to Progressive Web Apps][9] · [JSConf CN 上海 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI 广州 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux 北京 2017
-- 炒冷饭 · PWA 到底是个什么玩意？· Baidu HQ 北京 2017
-- [Service Worker 101][5] · GDG DevFest 北京 2016
-- [Progressive Web App，复兴序章][4] · [QCon 上海 2016](http://2016.qconshanghai.com/presentation/3111)
-- Progressive Web App 之我见 · GDG IO Redux 北京 2016
-- [CSS Still Sucks 2015][2] · 2015
-- [JavaScript 模块化七日谈][1] · 2015
+本站原主题,由[Hux](https://github.com/Huxpro/huxpro.github.io)提供,感谢黄玄大神,我在此基础上,增加了如下功能:
 
-[1]: //huangxuan.me/2015/07/09/js-module-7day/
-[2]: //huangxuan.me/2015/12/28/css-sucks-2015/
-[3]: //huangxuan.me/2016/06/05/pwa-in-my-pov/
-[4]: //huangxuan.me/2016/10/20/pwa-qcon2016/
-[5]: //huangxuan.me/2016/11/20/sw-101-gdgdf/
-[6]: https://yanshuo.io/assets/player/?deck=58ac8598b123db0067292f92 "PWA Rehashing"
-[7]: https://yanshuo.io/assets/player/?deck=593ad6fbfe88c2006a0a0d6d "The State of PWA"
-[8]: https://yanshuo.io/assets/player/?deck=594d673d570c357d0698a950 "Building PWA"
-[9]: //huangxuan.me/jsconfcn2017/
+* ✅增加`打赏`模块;
+* ✅增加`gitalk`评论模块;
+* ✅增加静态动画;
+* ✅增加网站页面访问统计;
+
+本站源码可以在[这里](https://github.com/yizibi/yizibi.github.io)获取,如果你喜欢,欢迎 [clone]((https://github.com/yizibi/yizibi.github.io)),打造属于自己的个性博客;
+
+如果你觉得本站不错,欢迎 [star](https://github.com/yizibi/yizibi.github.io),你的 [star](https://github.com/yizibi/yizibi.github.io)是我不断进步,不断坚持的动力,如果你正好也有兴趣拥有自己的个人博客,我们也可以交换一下友链;
+
+
+> 友情链接
+
+关于友情链接,完全是为了,互相督促自己,如果想和我`互友`,欢迎在[issue](https://github.com/yizibi/yizibi.github.io/issues)留言你的链接,注明,title;
+
+另外,既然是友链,我也希望,我们能够及时更新博客,不要只有3分钟热度,得过且过,这样是适合互友链的,谢谢;
+
+
+> 关于一之笔
+
+
+一之笔,为什么不是两支笔,其他笔?
+
+因为,一,乃,首,万物归一;
+
+所谓,"道生一,一生二,二生三,三生万物";
+
+我希望,纵横自有凌云笔,凌云健笔意纵横;
+
+我希望,自己能够不断坚持,而不是半途而废;
+
+我希望,万里江山笔下生,有时闲弄笔,风月资吟,请君为我壮酒行;
+
