@@ -2,7 +2,7 @@
 layout:     post
 title:      "MySQL数据库迁移： 将.frm、.myd和.myi文件导入mysql数据库中"
 subtitle:   ""
-date:       2018年03月22日 19:49:34
+date:       2018-03-22 19:49:34
 author:     "唐传林"
 header-img: "img/post-bg-universe"
 catalog: true
