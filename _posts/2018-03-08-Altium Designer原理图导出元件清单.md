@@ -1,8 +1,9 @@
 ﻿---
 layout:     post
-title:      "Altium Designer——原理图导出元件清单"
+title:      "Altium Designer原理图导出元件清单"
+subtitle:   ""
 date:       2018-03-08 18:46:56
-author:     "Nick"
+author:     "唐传林"
 header-img: "img/post-bg-miui6.jpg"
 tags:
     - Altium Designer
