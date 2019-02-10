@@ -16,10 +16,10 @@ tags:
 
 
 
-### 前言
+###前言
 tomcat从7.0版本开始就支持Servlet3.0，在Eclipse中不再需要web.xml配置servlet，而通过注解的方式找寻servlet。
 
-### 电脑环境：
+###电脑环境：
 Windows10教育版 64位 （OS内部版本：16299.125） 
 jdk版本：jdk1.8_111
 Eclipse版本：[eclipse-jee-oxygen-2-win32-x86_64](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2/eclipse-inst-win64.exe)
@@ -27,7 +27,7 @@ tomcat版本：[tomcat8.0](https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.
 MySQL的JDBC驱动程序版本：[mysql-connector-java-5.1.46.zip](https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.46.zip)
 
 
-### 步骤
+###步骤
 1、首先打开Eclipse软件，打开后在工具栏依次点击【File】——>【New】——>【Dynamic Web Project】，这个就代表新建的项目是WEB项目。
 2、填写项目的基本信息，包括项目名、项目运行时服务器版本。可以选择tomcat或者其他都可以，看项目需要。在这里我们输入一个【TestTomcat8】来测试项目的建立，输入完毕后我们点击【Next】按钮。
 ![这里写图片描述](//img-blog.csdn.net/20180321132231864?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
