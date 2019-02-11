@@ -1,9 +1,11 @@
 ---
 layout:     post
 title:      "Tomcat新特性-支持Servlet3.0注解定义-无需配置xml"
+subtitle:   "Tomcat新特性"
 date:       2018-03-21 21:19:58
 author:     "唐传林"
-header-img: "img/post-bg-2015.jpg"
+header-img: "img/post-bg-miui6.jpg"
+header-mask: 0.3
 catalog: true
 tags:
     - Tomcat
