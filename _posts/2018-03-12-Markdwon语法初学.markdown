@@ -6,8 +6,7 @@ author:     "唐传林"
 header-img: "img/post-bg-js-module"
 catalog: true
 tags:
-    - 电脑技巧
-	- Markdown
+
 ---
 
 

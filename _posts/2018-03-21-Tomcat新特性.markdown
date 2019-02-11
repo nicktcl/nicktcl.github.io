@@ -8,9 +8,7 @@ header-img: "img/post-bg-miui6.jpg"
 header-mask: 0.3
 catalog: true
 tags:
-    - Tomcat
-	- Servlet3.0注解
-	- 配置web.xml
+
 ---
 
 ## 前言
