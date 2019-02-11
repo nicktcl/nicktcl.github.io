@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Tomcat新特性-支持Servlet3.0注解定义-无需配置xml"
+title:  "Tomcat新特性-支持Servlet3.0注解定义-无需配置xml"
 subtitle:   "Tomcat新特性"
 date:       2018-03-21 21:19:58
 author:     "唐传林"
@@ -15,11 +15,8 @@ tags:
 
 
 
--------------------
 
-
-
-###前言
+### 前言
 tomcat从7.0版本开始就支持Servlet3.0，在Eclipse中不再需要web.xml配置servlet，而通过注解的方式找寻servlet。
 
 ###电脑环境：
