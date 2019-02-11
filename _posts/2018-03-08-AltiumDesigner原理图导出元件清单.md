@@ -1,4 +1,4 @@
-﻿---
+---
 layout:     post
 title:      "Altium Designer原理图导出元件清单"
 date:       2018-03-08 18:46:56
