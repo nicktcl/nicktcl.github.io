@@ -11,14 +11,10 @@ tags:
 
 
 
-
-
--------------------
-
-
 # 在 Eclipse 部署Resin服务器
 
 #### 电脑环境：
+
 Windows10教育版 64位 （OS内部版本：16299.125） 
 jdk版本：jdk1.8_111
 Eclipse版本：[eclipse-jee-oxygen-2-win32-x86_64](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2/eclipse-inst-win64.exe)
@@ -27,6 +23,7 @@ MySQL的JDBC驱动程序版本：[mysql-connector-java-5.1.46.zip](https://cdn.m
 
 
 ### 在 Eclipse 配置 Resin 服务器的步骤
+
 1、[到Resin官网下载Resin](http://caucho.com/download/resin-pro-4.0.55.zip)，并解压到E盘（或其他盘）的根目录文件夹下。<font color=#ff0000> 最好放到一个盘的根目录文件夹下，放到中文文件夹下会导致后面Resin运行闪退。 </font>
 
 2、打开Eclipse，依次打开Window——>preferences， 
@@ -58,5 +55,6 @@ MySQL的JDBC驱动程序版本：[mysql-connector-java-5.1.46.zip](https://cdn.m
 到这里，eclipse与Resin服务器就配置完成了。
 
 #### 参考资料：
+
 1、[Eclipse集成Resin服务器](https://blog.csdn.net/shehun1/article/details/38185037)
 2、[Eclipse(Luna)集成Resin4.0+服务器，以及配置参数](https://blog.csdn.net/aixiaoyang168/article/details/50948149)
