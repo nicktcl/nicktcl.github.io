@@ -1,1 +1,1 @@
-# nicktckl.github.io
+# [blog.nicktcl.win](https://blog.nicktcl.win/)
