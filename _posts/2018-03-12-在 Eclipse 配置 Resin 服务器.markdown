@@ -1,4 +1,4 @@
-﻿---
+---
 layout:     post
 title:      "在 Eclipse 配置 Resin 服务器"
 date:       2018-03-22 21:29:19
@@ -15,7 +15,7 @@ tags:
 
 #### 电脑环境：
 
-Windows10教育版 64位 （OS内部版本：16299.125） 
+Windows10教育版 64位 （OS内部版本：16299.125）
 
 jdk版本：jdk1.8_111
 
