@@ -14,7 +14,7 @@ future: true
 # SNS settings
 RSS: true
 weibo_username:     deeppark
-zhihu_username:     nicktcl
+#zhihu_username:     nicktcl
 github_username:    nicktcl
 #linkedin_username:  nicktcl
 #twitter_username:   nicktcl
