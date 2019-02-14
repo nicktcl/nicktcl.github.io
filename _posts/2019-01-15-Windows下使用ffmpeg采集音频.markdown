@@ -6,9 +6,9 @@ author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
 tags:
-    - windows
-	- ffmpeg
-	- 音频处理
+- windows
+- ffmpeg
+- 音频处理
 ---
 ##  前言
 

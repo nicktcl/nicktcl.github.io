@@ -7,7 +7,7 @@ header-img: "img/post-bg-2015.jpg"
 catalog:	 true
 tags:
     - linux
-	- alsa编程
+	- alsa编程# 
 ---
 ###  前言
 
