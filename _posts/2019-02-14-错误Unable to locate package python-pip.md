@@ -1,4 +1,4 @@
-﻿---
+---
 layout:		post
 title: 		错误 Unable to locate package python-pip
 date: 		2019-02-14 15:10:56
