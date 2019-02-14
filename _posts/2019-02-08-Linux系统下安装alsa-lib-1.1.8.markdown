@@ -6,8 +6,8 @@ author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
 tags:
-    - linux
-	- alsa编程# 
+- linux
+- alsa编程 
 ---
 ###  前言
 
