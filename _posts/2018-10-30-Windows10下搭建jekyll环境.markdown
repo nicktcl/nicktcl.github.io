@@ -5,7 +5,9 @@ date: 		2018-10-30 15:23:04
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- windows
+- jekyll
 ---
 #  Win10下安装jekyll搭建个人博客
 

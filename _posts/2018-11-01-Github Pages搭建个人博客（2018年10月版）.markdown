@@ -5,7 +5,9 @@ date: 		2018-11-01 20:37:24
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- github pages
+- 个人博客
 ---
 #  Github Pages搭建个人博客（2018年10月版）
 

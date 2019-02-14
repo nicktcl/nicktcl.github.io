@@ -10,10 +10,7 @@ categories:
 tags:
 - ipad
 - 扩展屏幕
-- splashtop
-- XDisplay
-- wired
-
+- 电脑技巧
 ---
 ##  前言
 

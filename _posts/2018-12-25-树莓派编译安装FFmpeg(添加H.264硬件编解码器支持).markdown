@@ -5,7 +5,10 @@ date: 		2018-12-25 10:55:00
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- 音频处理
+- ffmepg
+- 树莓派
 ---
 ###  说明
 

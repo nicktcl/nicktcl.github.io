@@ -5,7 +5,10 @@ date: 		2018-12-24 16:08:25
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- 音频处理
+- ffmepg
+- windows
 ---
 1、一开始在命令行下使用ffmpeg时执行“ffmpeg -list_devices true -f dshow -i dummy
 ”使用dshow来枚举当前系统上存在的音视频采集设备时，发现中文乱码，后来在老师帮助下，在命令行下执行命令“ chcp 65001”

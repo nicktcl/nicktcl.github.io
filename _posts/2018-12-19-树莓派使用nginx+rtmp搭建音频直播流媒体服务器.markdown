@@ -5,7 +5,13 @@ date: 		2018-12-19 15:55:07
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- 音频处理
+- 树莓派
+- 流媒体
+- linux
+- nginx
+- rtmp
 ---
 ##  前言
 

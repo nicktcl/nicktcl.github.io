@@ -5,7 +5,10 @@ date: 		2019-01-15 20:44:52
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+    - windows
+	- ffmpeg
+	- 音频处理
 ---
 ##  前言
 

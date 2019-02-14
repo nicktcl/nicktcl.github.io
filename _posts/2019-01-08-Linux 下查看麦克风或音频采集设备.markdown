@@ -5,7 +5,9 @@ date: 		2019-01-08 19:32:49
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+    - linux
+	- 音频处理
 ---
 ###  前言
 

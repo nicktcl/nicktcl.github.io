@@ -8,10 +8,9 @@ catalog:	 true
 categories:
 - Linux
 tags:
-- alsa音频
+- 音频处理
 - alsa编程
 - linux
-- alsa驱动
 
 ---
 ###  1、Linux 系统下三大主流声卡驱动程序集

@@ -5,7 +5,8 @@ date: 		2019-01-08 14:15:40
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+    - linux
 ---
 ###  前言
 
