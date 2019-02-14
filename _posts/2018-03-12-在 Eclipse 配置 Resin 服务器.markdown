@@ -33,29 +33,29 @@ MySQL的JDBC驱动程序版本：[mysql-connector-java-5.1.46.zip](https://cdn.m
 
 2、打开Eclipse，依次打开Window——>preferences， 
 在preferences中打开Server——>Runtime Evironment，点击右侧的Add。 
-![这里写图片描述](https://img-blog.csdn.net/20180320212602243?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
-![](https://img-blog.csdn.net/20180320212803395?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](http://img-blog.csdn.net/20180320212602243?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![](http://img-blog.csdn.net/20180320212803395?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 3、在点击Add后打开的窗口中选择Resin文件夹下的Resin4.0，勾选上“`Creat a new local server`”然后点击Next。 
-![这里写图片描述](https://img-blog.csdn.net/20180322205118403?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](http://img-blog.csdn.net/20180322205118403?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 4、需要注意一点的是，Resin运行的环境是JDK，而不是JRE，所以需要在运行环境时，选择JDK。然后Resin Home选择刚刚下载解压好的resin文件夹。然后点击Next。
-![这里写图片描述](https://img-blog.csdn.net/20180322212057923?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](http://img-blog.csdn.net/20180322212057923?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 5、点击Next。
-![这里写图片描述](https://img-blog.csdn.net/20180322205319943?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](http://img-blog.csdn.net/20180322205319943?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 6、更改端口不要与tomcat的冲突，点击finish。
-![这里写图片描述](https://img-blog.csdn.net/20180322212220366?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](http://img-blog.csdn.net/20180322212220366?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 7、在eclipse下面部分切换到servers子项，右键点击Resin4.0，再点击start就可以运行Resin4.0了。
-![这里写图片描述](https://img-blog.csdn.net/20180322212421475?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](http://img-blog.csdn.net/20180322212421475?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 8、当eclipse的控制台输出如下信息，则说明Resin4.0运行成功。
-![这里写图片描述](https://img-blog.csdn.net/2018032221261760?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](http://img-blog.csdn.net/2018032221261760?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 9、我们在浏览器输入`http://127.0.0.1:8080/`，就可以看到Resin的默认页面。
-![这里写图片描述](https://img-blog.csdn.net/20180322212737585?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](http://img-blog.csdn.net/20180322212737585?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 到这里，eclipse与Resin服务器就配置完成了。
 

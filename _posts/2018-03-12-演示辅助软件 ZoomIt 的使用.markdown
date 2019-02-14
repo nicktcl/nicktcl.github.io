@@ -18,7 +18,7 @@ ZoomIt
 可根据自己的习惯设置快捷键以及屏幕放大倍数。  
 
 
-![这里写图片描述](http://img-blog.csdn.net/20180312134120201?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVGFuZ19DaHVhbmxpbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](http:http://img-blog.csdn.net/20180312134120201?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVGFuZ19DaHVhbmxpbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 
 
