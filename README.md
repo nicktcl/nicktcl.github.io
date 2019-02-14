@@ -1,4 +1,4 @@
-### 博客地址：[blog.nicktcl.win](https://blog.nicktcl.win/)
+### 该博客在线预览地址：[blog.nicktcl.win](https://blog.nicktcl.win/)
 
 
 ### 关于本博客
