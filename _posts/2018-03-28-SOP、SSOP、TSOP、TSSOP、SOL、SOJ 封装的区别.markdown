@@ -5,7 +5,7 @@ date: 		2018-03-28 18:42:27
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags：
+tags:
 - 硬件电路
 ---
 #  SOP、SSOP、TSOP、TSSOP、SOL、SOJ 封装的区别
