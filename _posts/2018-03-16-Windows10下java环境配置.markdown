@@ -34,16 +34,26 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
 ](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
 ![这里写图片描述](//img-blog.csdn.net/20180316200358546?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
-2、下载完成后点击打开一路点击“下一步”进行安装，安装过程中会先自动安装jdk。  
-![这里写图片描述](//img-blog.csdn.net/20180316201409452?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-中途会弹出另外一个窗口让选择jre安装位置，点击“下一步”后再自动安装jre。  
-![这里写图片描述](//img-blog.csdn.net/20180316201310515?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-出现以下界面则安装成功。  
-![这里写图片描述](//img-blog.csdn.net/20180316201015692?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+2、下载完成后点击打开一路点击“下一步”进行安装，安装过程中会先自动安装jdk。 
+
+![图1](//img-blog.csdn.net/20180316201409452?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
+中途会弹出另外一个窗口让选择jre安装位置，点击“下一步”后再自动安装jre。 
+ 
+![图2](//img-blog.csdn.net/20180316201310515?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
+出现以下界面则安装成功。 
+ 
+![图3](//img-blog.csdn.net/20180316201015692?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70) 
+ 
 3、安装完成后在桌面上右键点击“此电脑”，左键点击“属性”，在弹出的窗口左侧找到“高级系统设置”并点击。  
+
 ![这里写图片描述](//img-blog.csdn.net/20180316201603343?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 4、在弹出的窗口中右下方找到“环境变量”并点击。  
+
 ![这里写图片描述](//img-blog.csdn.net/20180316201739420?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 5、设置如下变量名：  
 变量名：Path  
 变量值： ` %java_home%\bin;%java_home%\jre\bin; `  
