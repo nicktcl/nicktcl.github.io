@@ -1,6 +1,6 @@
 ﻿---
 layout:		post
-title: 		jekyll中markdown要注意的问题
+title: 		github pages的jekyll中markdown要注意的问题
 date: 		2019-02-14 16:20:56
 author:		"唐传林"
 header-img: 	"img/post-bg-2015.jpg"
