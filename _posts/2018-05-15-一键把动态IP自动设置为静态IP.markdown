@@ -5,7 +5,8 @@ date: 		2018-05-15 22:02:37
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- 电脑技巧
 ---
 #  一键把动态IP自动设置为静态IP
 
