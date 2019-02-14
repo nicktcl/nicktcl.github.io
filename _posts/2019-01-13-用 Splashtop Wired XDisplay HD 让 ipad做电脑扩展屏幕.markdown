@@ -21,9 +21,9 @@ Display等，但是这几个使用下来就 splashtop的XDisplay 好用一点，
 
 ipad上到app store搜索 “splashtop” 然后下载安装 “Splashtop Wired XDisplay HD - 显示器扩展与镜像”。 
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2019011319584747.jpg)
+![在这里插入图片描述](http://img-blog.csdnimg.cn/2019011319584747.jpg)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190113195904497.PNG)
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190113195904497.PNG)
 
 ##  电脑端安装 Splashtop Wired XDisplay
 
@@ -32,10 +32,10 @@ XDisplay，或者 [ 点击这里](https://d17kmd0va0f0mp.cloudfront.net/xdisplay
 直接下载Splashtop Wired XDisplay。下载完成后安装。  
 安装完成打开后如下图，然后后台该程序就行了。  
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/201901132001339.png)
+![在这里插入图片描述](http://img-blog.csdnimg.cn/201901132001339.png)
 
 ######
 最后用usb线连接ipad到电脑，然后ipad上打开XDiaplsy就可以了。默认扩展屏幕是在电脑主屏幕右边，就是鼠标默认可以从电脑主屏幕右边滑到ipad的扩展屏幕。若需要将扩展屏幕设置在电脑主屏幕左边，即可以从电脑主屏幕左边滑到ipad的扩展屏幕，则可以在电脑的“显示设置”里面拖动一下两个屏幕。如下动图。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190113200938989.gif)
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190113200938989.gif)
 
