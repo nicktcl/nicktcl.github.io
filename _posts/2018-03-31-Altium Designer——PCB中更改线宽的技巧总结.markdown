@@ -7,7 +7,8 @@ header-img: "img/post-bg-2015.jpg"
 catalog:	 true
 categories:
 - Altium Designer
-
+tags:
+- Altium Designer
 ---
 #  Altium Designer——PCB中更改线宽的技巧总结
 
