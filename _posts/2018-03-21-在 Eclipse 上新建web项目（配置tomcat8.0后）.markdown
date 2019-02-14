@@ -13,15 +13,9 @@ catalog:	 true
 
 Windows10教育版 64位 （OS内部版本：16299.125）  
 jdk版本：jdk1.8_111  
-Eclipse版本： [ eclipse-jee-oxygen-2-win32-x86_64
-](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2
-/eclipse-inst-win64.exe)  
-tomcat版本： [ tomcat8.0
-](https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.50/bin/apache-
-tomcat-8.0.50-windows-x64.zip)  
-MySQL的JDBC驱动程序版本： [ mysql-connector-java-5.1.46.zip
-](https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-
-java-5.1.46.zip)
+Eclipse版本： [ eclipse-jee-oxygen-2-win32-x86_64](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2/eclipse-inst-win64.exe)  
+tomcat版本： [ tomcat8.0](https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.50/bin/apache-tomcat-8.0.50-windows-x64.zip)  
+MySQL的JDBC驱动程序版本： [ mysql-connector-java-5.1.46.zip](https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.46.zip)
 
 ###  在 Eclipse 上新建web项目步骤
 
