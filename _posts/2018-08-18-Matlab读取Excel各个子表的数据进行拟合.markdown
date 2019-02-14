@@ -5,7 +5,9 @@ date: 		2018-08-18 16:26:48
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- matlab
+- 数据拟合
 ---
 #  Matlab读取Excel各个子表的数据进行拟合
 

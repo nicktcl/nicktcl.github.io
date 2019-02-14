@@ -7,7 +7,8 @@ header-img: "img/post-bg-2015.jpg"
 catalog:	 true
 categories:
 - Altium Designer
-
+tags:
+- Altium Designer
 ---
 #  Altium Designer——捕捉栅格、电气栅格、可视栅格的意义及设置
 

@@ -5,7 +5,8 @@ date: 		2018-05-30 15:40:31
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- matlab
 ---
 #  matlab生成正弦系数表
 

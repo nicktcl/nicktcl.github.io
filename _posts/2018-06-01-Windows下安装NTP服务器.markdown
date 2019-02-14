@@ -5,7 +5,9 @@ date: 		2018-06-01 15:00:25
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- windows
+- ntp
 ---
 #  NTP服务器介绍
 

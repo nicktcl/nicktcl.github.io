@@ -5,7 +5,8 @@ date: 		2018-05-31 21:36:17
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- dsp
 ---
 #  利用 CCS 和DSP 编程实现双边带调制（查表法）
 
