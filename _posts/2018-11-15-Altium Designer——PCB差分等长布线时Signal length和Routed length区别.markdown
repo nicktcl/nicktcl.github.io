@@ -10,8 +10,7 @@ categories:
 tags:
 - PCB差分布线
 - 等长布线
-- Altium
-- Designer
+- Altium Designer
 - Signal 
 - length
 - Routed

@@ -7,7 +7,8 @@ header-img: "img/post-bg-2015.jpg"
 catalog:	 true
 categories:
 - Altium Designer
-
+tags:
+- Altium Designer
 ---
 #  Altium Designer——PCB多层板中内电层分割基本原则
 

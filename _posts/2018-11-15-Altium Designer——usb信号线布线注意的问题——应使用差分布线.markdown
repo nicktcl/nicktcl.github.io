@@ -7,7 +7,8 @@ header-img: "img/post-bg-2015.jpg"
 catalog:	 true
 categories:
 - Altium Designer
-
+tags:
+- Altium Designer
 ---
 #  Altium Designer——USB信号线布线经验教训——应使用差分布线
 
