@@ -1,0 +1,35 @@
+---
+layout:		post
+title: 		windows远程桌面错误：出现身份验证错误：要求的函数不正确等解决办法
+date: 		2019-01-04 09:56:46
+author:		"唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:	 true
+
+---
+##  前言
+
+windows 10 教育版，版本17134.407，安装最新补丁后无法远程windows10。
+
+报错信息如下：出现身份验证错误，要求的函数不受支持 可能是由于CredSSP加密Oracle修正。  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190104095528588.png?x-oss-
+process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)  
+微软给出解决方案：  
+[ https://support.microsoft.com/zh-cn/help/4093492/credssp-updates-for-
+cve-2018-0886-march-13-2018 ](https://support.microsoft.com/zh-cn/help/4093492
+/credssp-updates-for-cve-2018-0886-march-13-2018)
+
+2018 年 5 月 8 日  
+将默认设置从“易受攻击”更改为“缓解”的更新。  
+相关的 Microsoft 知识库编号已在 CVE-2018-0886 中列出。
+
+##  具体解决办法
+
+windows专业版以上：  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2019010409553591.png?x-oss-
+process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190104095542790.png?x-oss-
+process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190104095604807.png?x-oss-
+process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)
+

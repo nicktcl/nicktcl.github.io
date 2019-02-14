@@ -1,0 +1,66 @@
+---
+layout:		post
+title: 		Win10安装Ubuntu子系统教程
+date: 		2018-05-11 11:45:31
+author:		"唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:	 true
+
+---
+#  Win10安装Ubuntu子系统教程
+
+##  Win10的Linux子系统简介
+
+一直都听说windows10已经原生支持Linux了，今天想试试看。  
+Win10一周年版推出了用于Windows的Linux子系统这一功能，
+Linux子系统和Windows的结合真是有一种神互补。子系统可以挂载windows的文件系统，于是就可以在现有的文件系统下干一个完整的Linux环境所能干的事情。软件丰富更适合日常使用的Windows与开源且适合开发的Linux结合使得开发更加简便，不用再考虑双系统虚拟机这种效率不高的结合方式了，Linux
+on Windows用一种应用软件的方式实现了系统软件的功能。
+
+##  Win10安装Ubuntu子系统步骤
+
+1、以管理员身份打开PowerShell并运行：
+
+    
+    
+    Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+
+2、出现提示时重新启动计算机。  
+3、从win10开始菜单打开Microsoft store并选择您最喜欢的Linux发行版。
+
+  * Ubuntu 
+  * OpenSUSE 
+  * SLES 
+  * Kali Linux 
+  * Debian GNU/Linux   
+![这里写图片描述](https://img-blog.csdn.net/20180511113338819?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+4、安装完成后在win10开始菜单中windows10应用中找到ubuntu并打开，开始自动安装。  
+![这里写图片描述](https://img-blog.csdn.net/20180511113650317?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+5、小写字母输入用户名。  
+![这里写图片描述](https://img-blog.csdn.net/2018051111373485?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+6、输入密码。  
+![这里写图片描述](https://img-blog.csdn.net/20180511113821911?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+7、出现下图就说明安装成功了。  
+![这里写图片描述](https://img-blog.csdn.net/20180511113922862?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+##  关于卸载子系统
+
+在控制面板中不能卸载windows10应用，所以要到windows10所有设置中卸载。  
+1、打开windows10所有设置；  
+![这里写图片描述](https://img-blog.csdn.net/20180511114142528?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+2、点击“应用”。  
+3、在搜索框中输入“ubuntu”找到ubuntu子系统应用。  
+![这里写图片描述](https://img-blog.csdn.net/20180511114411507?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+4、左键点击，然后再点“卸载”。
+
+##  参考资料：
+
+1、 [ Install the Linux Subsystem on Windows 10 | Microsoft Docs
+](https://docs.microsoft.com/en-us/windows/wsl/install-win10)  
+2、 [ Troubleshooting the Windows Susbystem for Linux | Microsoft Docs
+](https://docs.microsoft.com/en-us/windows/wsl/troubleshooting#confirm-wsl-is-
+enabled)  
+3、 [ Win10安装Ubuntu子系统教程（附安装图形化界面） ](https://www.windows10.pro/bash-on-ubuntu-
+on-windows/)  
+4、 [ 启用Win10的Linux子系统
+](https://blog.csdn.net/maoyongf2008/article/details/78928045)
+
