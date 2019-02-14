@@ -7,7 +7,7 @@ header-img: 	"img/post-bg-2015.jpg"
 catalog:	 true
 tags:
 - python
-
+- 错误
 ---
 
 ubuntu13.04下执行sudo apt-get install python-pip 出现以下错误：

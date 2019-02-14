@@ -5,6 +5,9 @@ date: 		2019-02-14 15:25:56
 author:		"唐传林"
 header-img: 	"img/post-bg-2015.jpg"
 catalog:	 true
+tags:
+- python
+- 错误
 ---
 
 
