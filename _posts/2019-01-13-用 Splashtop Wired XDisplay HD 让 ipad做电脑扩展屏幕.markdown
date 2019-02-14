@@ -19,9 +19,10 @@ Display等，但是这几个使用下来就 splashtop的XDisplay 好用一点，
 
 ##  ipad端安装 Splashtop Wired XDisplay HD - 显示器扩展与镜像
 
-ipad上到app store搜索 “splashtop” 然后下载安装 “Splashtop Wired XDisplay HD - 显示器扩展与镜像”。  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2019011319584747.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190113195904497.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)
+ipad上到app store搜索 “splashtop” 然后下载安装 “Splashtop Wired XDisplay HD - 显示器扩展与镜像”。 
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2019011319584747.jpg)  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190113195904497.PNG)
 
 ##  电脑端安装 Splashtop Wired XDisplay
 
