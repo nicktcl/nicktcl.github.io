@@ -5,7 +5,8 @@ date: 		2018-03-18 20:02:25
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- mysql
 ---
 #  Windows10下安装MySQL5.0详细教程
 

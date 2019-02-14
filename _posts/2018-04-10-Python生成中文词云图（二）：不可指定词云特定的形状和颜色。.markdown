@@ -5,7 +5,9 @@ date: 		2018-04-10 10:01:54
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- python
+- 词云
 ---
 #  Python生成中文词云图（二）：不可指定词云特定的形状和颜色。
 

@@ -5,7 +5,10 @@ date: 		2018-04-02 19:49:30
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- python
+- PyCharm
+- Anaconda
 ---
 #  Pycharm中使用Anaconda
 

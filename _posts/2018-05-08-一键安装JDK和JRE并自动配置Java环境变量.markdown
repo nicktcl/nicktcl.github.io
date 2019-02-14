@@ -5,7 +5,8 @@ date: 		2018-05-08 16:27:37
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- java
 ---
 #  一键安装JDK和JRE并自动配置Java环境变量
 

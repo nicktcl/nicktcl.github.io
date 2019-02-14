@@ -5,7 +5,10 @@ date: 		2018-04-11 21:18:48
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags：
+- python
+- ocr
+- Tesseract
 ---
 #  使用Tesseract对图片文字OCR识别
 

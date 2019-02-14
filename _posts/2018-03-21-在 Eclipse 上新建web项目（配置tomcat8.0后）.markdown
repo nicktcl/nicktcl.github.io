@@ -5,7 +5,8 @@ date: 		2018-03-21 15:32:57
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- Eclipse
 ---
 #  在 Eclipse 上新建web项目（配置tomcat8.0后）
 

@@ -8,8 +8,8 @@ catalog:	 true
 categories:
 - java
 tags:
-- tomcat8
-- eclipse上配置tomcat8
+- tomcat
+- Eclipse
 
 ---
 #  在 Eclipse 上配置 tomcat8.0

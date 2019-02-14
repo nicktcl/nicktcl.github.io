@@ -5,7 +5,9 @@ date: 		2018-03-20 18:04:38
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-
+tags:
+- mysql
+- Eclipse
 ---
 #  在Eclipse上配置MySQL环境
 

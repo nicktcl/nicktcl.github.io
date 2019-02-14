@@ -5,6 +5,9 @@ date: 		2018-03-31 18:57:27
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
+tags:
+- python
+- PyCharm
 
 ---
 #  Python 及 PyCharm 安装详细教程
