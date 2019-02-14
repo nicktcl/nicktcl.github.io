@@ -3,10 +3,10 @@ layout:		post
 title: 		Beautiful Soup 4.2.0 官方中文文档
 date: 		2019-02-13 21:39:56
 author:		"唐传林"
-header-img: "img/post-bg-2015.jpg"
+header-img: 	"img/post-bg-2015.jpg"
 catalog:	 true
 tags:
-    - 爬虫
+- 爬虫
 
 ---
 Beautiful Soup

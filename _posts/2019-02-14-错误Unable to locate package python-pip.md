@@ -3,10 +3,10 @@ layout:		post
 title: 		错误 Unable to locate package python-pip
 date: 		2019-02-14 15:10:56
 author:		"唐传林"
-header-img: "img/post-bg-2015.jpg"
+header-img: 	"img/post-bg-2015.jpg"
 catalog:	 true
 tags:
-    - python
+- python
 
 ---
 
