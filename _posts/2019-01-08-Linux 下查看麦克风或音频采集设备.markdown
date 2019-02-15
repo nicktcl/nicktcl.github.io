@@ -1,0 +1,59 @@
+---
+layout:  post
+title:   Linux 下查看麦克风或音频采集设备
+date:   2019-01-08 19:32:49
+author:  "唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:   false
+
+---
+###  前言
+
+最近需要在树莓派上做音频采集和音频处理，所以第一步得在树莓派系统下查看到当前的音频输入和音频输出设备。树莓派安装了raspberry系统，raspberry系统隶属于debian系统。
+
+###  一、如何查看音频设备
+
+如果你的系统有 /proc/asound/cards 路径,说明 ALSA 驱动已经使用上,可查看 sound devices。  
+执行以下命令可看到当前的音频设备。
+
+    
+    
+    cat /proc/asound/cards
+    
+
+#####  执行结果：
+
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190108161409240.png)  
+可以看到当前有两个音频设备：板子自带的bcm 2835 ALSA声卡和usb音频采集卡。
+
+###  二、查看音频输入设备（microphone 、麦克风、音频采集卡等）
+
+执行以下命令可看到当前的音频输入设备。
+
+    
+    
+    arecord -l
+    
+
+#####  执行结果：
+
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190108161543708.png)  
+可以看到当前只有一个音频输入设备，即插上的usb音频采集卡，同时也说明树莓派自带的音频口只能音频输出，不带有麦克风功能。
+
+###  三、查看音频输出设备（扬声器，speaker）
+
+    
+    
+    aplay -l
+    
+
+#####  执行结果：
+
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190108161550974.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)  
+可以看到有两个音频输出设备，一个是耳机口，一个是hdmi口。
+
+###  参考资料
+
+1、 [ Linux 下测试 microphone (麦克风) - OOCLAB 开发者社区
+](http://plus.ooclab.com/note/article/149)
+
