@@ -1,26 +1,22 @@
 ---
-layout:		post
-title: 		在 Eclipse 上新建web项目（配置tomcat8.0后）
-date: 		2018-03-21 15:32:57
-author:		"唐传林"
+layout:  post
+title:   在 Eclipse 上新建web项目（配置tomcat8.0后）
+date:   2018-03-21 15:32:57
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
-tags:
-- Eclipse
+catalog:   false
+
 ---
 #  在 Eclipse 上新建web项目（配置tomcat8.0后）
 
 ###  电脑环境：
 
 Windows10教育版 64位 （OS内部版本：16299.125）  
-
 jdk版本：jdk1.8_111  
-
-Eclipse版本： [ eclipse-jee-oxygen-2-win32-x86_64](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2/eclipse-inst-win64.exe)  
-
-tomcat版本： [ tomcat8.0](https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.50/bin/apache-tomcat-8.0.50-windows-x64.zip)  
-
-MySQL的JDBC驱动程序版本： [ mysql-connector-java-5.1.46.zip](https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.46.zip)
+Eclipse版本： [ eclipse-jee-oxygen-2-win32-x86_64](http://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2
+/eclipse-inst-win64.exe)  
+tomcat版本： [ tomcat8.0](http://archive.apache.org/dist/tomcat/tomcat-8/v8.0.50/bin/apache-tomcat-8.0.50-windows-x64.zip)  
+MySQL的JDBC驱动程序版本： [ mysql-connector-java-5.1.46.zip](http://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.46.zip)
 
 ###  在 Eclipse 上新建web项目步骤
 
@@ -46,10 +42,10 @@ WEB配置文件：web.xml
 ![这里写图片描述](http://img-blog.csdn.net/20180321133331600?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 7、输入类名Hello，输入类名HelloWorld，点击finish。  
 ![这里写图片描述](http://img-blog.csdn.net/20180321151113332?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-8、写入以下测试代码并且保存。
+8、写人以下测试代码并且保存。
 
-
-```java
+    
+```    
     package Hello;
     import java.io.IOException;  
     import java.io.PrintWriter;  
@@ -85,9 +81,9 @@ WEB配置文件：web.xml
 ![这里写图片描述](http://img-blog.csdn.net/2018032115172144?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 11、在web.xml中输入如下内容并且保存。
 
-
-``` xml
- <?xml version="1.0" encoding="UTF-8"?>
+    
+```    
+    <?xml version="1.0" encoding="UTF-8"?>
     <web-app xmlns="http://java.sun.com/xml/ns/javaee"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
@@ -109,9 +105,7 @@ WEB配置文件：web.xml
     <url-pattern>/HelloWorld</url-pattern>
     </servlet-mapping>
     </web-app>
-
 ```
-
 
 注意：servlet-class标签里的类的名称和路径是前面new包和类时填写的，需要和之前填写的一致，我这里是包名是Hello，类名是HelloWorld
 ，所以servlet-class标签里的内容是：Hello.HelloWorld
@@ -133,9 +127,5 @@ http://localhost:8080/TestTomcat8/HelloWorld
 1、 [ 使用eclipse建立第一个web项目(java)
 ](http://blog.csdn.net/zhouzezhou/article/details/52496511)  
 2、 [ eclipse怎么样新建web项目，eclipse新建web项目
-](https://jingyan.baidu.com/article/ce436649f3334e3773afd3e0.html)
+](http://jingyan.baidu.com/article/ce436649f3334e3773afd3e0.html)
 
-
-```
-
-```
