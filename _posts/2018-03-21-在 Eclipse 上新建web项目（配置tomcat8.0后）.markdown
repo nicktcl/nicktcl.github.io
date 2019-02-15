@@ -48,7 +48,7 @@ WEB配置文件：web.xml
 ![这里写图片描述](http://img-blog.csdn.net/20180321151113332?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 8、写入以下测试代码并且保存。
 
-
+~~~
     package Hello;
     import java.io.IOException;  
     import java.io.PrintWriter;  
@@ -77,7 +77,7 @@ WEB配置文件：web.xml
             out.write("</html>");  
         }  
     }  
-
+~~~
 
 ![这里写图片描述](http://img-blog.csdn.net/2018032115122210?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 10、然后打开项目文件夹下WebContent——>WEB-INF——>web.xml，使用Text editor打开web.xml。  
@@ -85,7 +85,7 @@ WEB配置文件：web.xml
 11、在web.xml中输入如下内容并且保存。
 
 
-
+~~~
  <?xml version="1.0" encoding="UTF-8"?>
     <web-app xmlns="http://java.sun.com/xml/ns/javaee"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -108,7 +108,7 @@ WEB配置文件：web.xml
     <url-pattern>/HelloWorld</url-pattern>
     </servlet-mapping>
     </web-app>
-
+~~~
 
 
 注意：servlet-class标签里的类的名称和路径是前面new包和类时填写的，需要和之前填写的一致，我这里是包名是Hello，类名是HelloWorld
