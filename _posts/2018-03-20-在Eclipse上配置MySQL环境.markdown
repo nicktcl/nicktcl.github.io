@@ -1,11 +1,13 @@
 ---
-layout:  post
-title:   在Eclipse上配置MySQL环境
-date:   2018-03-20 18:04:38
-author:  "唐传林"
+layout:		post
+title: 		在Eclipse上配置MySQL环境
+date: 		2018-03-20 18:04:38
+author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:   false
-
+catalog:	 true
+tags:
+- mysql
+- Eclipse
 ---
 #  在Eclipse上配置MySQL环境
 
@@ -13,18 +15,20 @@ catalog:   false
 
 Windows10教育版 64位 （OS内部版本：16299.125）  
 Eclipse版本： [ eclipse-jee-oxygen-2-win32-x86_64
-](http://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2
+](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2
 /eclipse-inst-win64.exe)  
 MySQL的JDBC驱动程序版本： [ mysql-connector-java-5.1.46.zip
-](http://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.46.zip)
+](https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-
+java-5.1.46.zip)
 
 ###  在Eclipse上配置MySQL环境步骤：
 
 1、首先，请按照博客“ [ Windows10下安装MySQL5.0详细教程
 ](http://blog.csdn.net/tang_chuanlin/article/details/79603063)
 ”在电脑上安装好MySQL5.0;  
-2、到 [ MySQL官网下载MySQL的JDBC驱动程序 ](http://cdn.mysql.com//Downloads/Connector-J
-/mysql-connector-java-5.1.46.zip) ,解压后得到以下文件。其中最关键的是“mysql-connector-java-5.1.46-bin.jar”文件。  
+2、到 [ MySQL官网下载MySQL的JDBC驱动程序 ](https://cdn.mysql.com//Downloads/Connector-J
+/mysql-connector-java-5.1.46.zip) ,解压后得到以下文件。其中最关键的是“mysql-connector-
+java-5.1.46-bin.jar”文件。  
 ![这里写图片描述](http://img-blog.csdn.net/20180320160618933?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 3、打开Eclipse，依次打开Window——>preferences——>java——>Build Path——>User Libraries.  
 ![这里写图片描述](http://img-blog.csdn.net/20180320161208968?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  

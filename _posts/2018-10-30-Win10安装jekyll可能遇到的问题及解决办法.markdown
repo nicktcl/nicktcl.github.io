@@ -1,0 +1,93 @@
+---
+layout:		post
+title: 		Win10安装jekyll可能遇到的问题及解决办法
+date: 		2018-10-30 18:05:08
+author:		"唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:	 true
+tags:
+- windows
+- jekyll
+---
+#  Win10安装jekyll可能遇到的问题及解决办法
+
+##  错误1：
+
+在执行 ` gem install jekyll ` 时出现以下错误，提示说SSL证书认证失败。
+
+#####  错误原文：
+
+` ERROR: Could not find a valid gem 'jekyll' (>= 0), here is why: Unable to
+download data from https://gems.ruby-china.com/ - SSL_connect returned=1
+errno=0 state=error: certificate verify failed (https://gems.ruby-
+china.com/specs.4.8.gz) `
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181030161226855.jpg)
+
+#####  错误1解决办法：
+
+请修改 ` C:\Users\用户名(这里为电脑的用户名)\.gemrc ` 文件，增加 ` ssl_verify_mode: 0 ` 配置，以便于
+RubyGems 可以忽略 SSL 证书错误。  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181030161717442.jpg)
+
+##  错误2：
+
+在执行 ` jekyll new myblogs ` 时出现以下错误，提示说SSL证书认证失败。  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181030162204753.jpg)
+
+#####  错误2解决办法：
+
+请修改 ` C:\Users\用户名(这里为电脑的用户名)\.bundle/config ` 文件，使 ` BUNDLE_MIRROR__HTTPS
+://GEMS__RUBY-CHINA__COM/: "https://rubygems.org" ` 在第一行，即让blunder优先使用 `
+https://rubygems.org ` 作为源。  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181030162556507.jpg)
+
+##  错误3：
+
+在执行 ` jekyll serve ` 时出现以下错误。
+
+#####  错误原文：
+
+` Deprecation：The ‘gems’ configuration option has been renamed to 'plugins'.
+Please update your config file accordingly. Dependency Error: Yikes! It looks
+like you don’t have jekyll-paginate or one of its dependencies installed. In
+order to use Jekyll as currently configured, you’ll need to install this gem.
+The full error message from Ruby is: ‘cannot load such file – jekyll-paginate’
+If you run into trouble, you can find helpful resources at
+https://jekyllrb.com/help/! jekyll 3.8.4 | Error: jekyll-paginate `  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181030163734755.jpg)
+
+#####  错误3解决办法：
+
+1、把博客文件夹“myblog”下“_config.yml”文件中的 ` gems: [jekyll-paginate] ` 改为 ` plugins:
+[jekyll-paginate] ` 。  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181030175945707.png)  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181030175952733.png)  
+2、在cmd命令行窗口下执行 ` gem install jekyll-paginate ` 安装 jekyll-paginate。
+
+##  参考资料：
+
+1、[ [ ruby]rubyGem出现ERROR: Could not find a valid gem时的处理方法 - 李明夕 - 博客园
+](https://www.cnblogs.com/limingxi/p/4292463.html)  
+2、 [ ERROR: Could not find a valid gem ‘jekyll’ (>= 0), here is why: · Issue
+#34 · juthilo/run-jekyll-on-windows ](https://github.com/juthilo/run-jekyll-
+on-windows/issues/34)  
+3、 [ Could not find a valid gem ‘jekyll’ 安装jekyll问题解决 - 阳光e站------zSunsoft
+Team - ITeye博客 ](http://sunxboy.iteye.com/blog/2217811)  
+4、 [ Ruby Gem命令详解 - 简书 ](https://www.jianshu.com/p/728184da1699)  
+5、 [ Setting up your GitHub Pages site locally with Jekyll - User
+Documentation ](https://help.github.com/articles/setting-up-your-github-pages-
+site-locally-with-jekyll/)  
+6、 [ Bundle、Gem、Gemfile关系 - 简书 ](https://www.jianshu.com/p/32fcdeb5bbec)  
+7、 [ Windows安装Jekll - 不折腾会死 - SegmentFault 思否
+](https://segmentfault.com/a/1190000010195733)  
+8、 [ MSYS2 homepage ](http://www.msys2.org/)  
+9、 [ Jekyll搭建写作环境问题集锦 - 简书 ](https://www.jianshu.com/p/12e7e1f8007e)  
+10、 [ jekyll-paginate使用失败 - Monkey_D_Luffy的博客 - CSDN博客
+](https://blog.csdn.net/qq_26508409/article/details/77927593)  
+11、 [ jekyll安装过程中可能会遇到的一些错误及解决办法 - 浪潮之巅的专栏 - CSDN博客
+](https://blog.csdn.net/wyc12306/article/details/51504885?utm_source=blogxgwz1)  
+12、 [ Using Jekyll as a static site generator with GitHub Pages - User
+Documentation ](https://help.github.com/articles/using-jekyll-as-a-static-
+site-generator-with-github-pages/)
+

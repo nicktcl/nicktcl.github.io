@@ -1,11 +1,12 @@
 ---
-layout:  post
-title:   Windows10下安装MySQL5.0详细教程
-date:   2018-03-18 20:02:25
-author:  "唐传林"
+layout:		post
+title: 		Windows10下安装MySQL5.0详细教程
+date: 		2018-03-18 20:02:25
+author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:   false
-
+catalog:	 true
+tags:
+- mysql
 ---
 #  Windows10下安装MySQL5.0详细教程
 
@@ -18,9 +19,9 @@ windows10教育版 64位 （OS内部版本：16299.125）
 ##  安装步骤：
 
 1、到 [ MySQL官网下载MySQL5.0安装程序
-](http://cdn.mysql.com/archives/mysql-5.0/mysql-5.0.96-winx64.zip) 。  
+](https://cdn.mysql.com/archives/mysql-5.0/mysql-5.0.96-winx64.zip) 。  
 注意：MySQL官网有好多个版本，本教程以MySQL5.0为例子进行介绍。  
-[ 需要MySQL其他版本点击这里 ](http://downloads.mysql.com/archives/community/)  
+[ 需要MySQL其他版本点击这里 ](https://downloads.mysql.com/archives/community/)  
 ![这里写图片描述](http://img-blog.csdn.net/20180318185706592?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 2、解压后双击打开“Setup.exe”，点击“Next”。  
 ![这里写图片描述](http://img-blog.csdn.net/20180318185934282?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
@@ -45,11 +46,12 @@ windows10教育版 64位 （OS内部版本：16299.125）
 “Server Machine（服务器类型，mysql占用较多资源）”，  
 “Dedicated MySQL Server Machine（专门的数据库服务器，mysql占用所有可用资源）”，  
 大家根据自己的类型选择了，我们做开发一般选“Developer Machine”。  
-![这里写图片描述](http://img-blog.csdn.net/20180430173637927?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https:http://img-blog.csdn.net/20180430173637927?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 11、选择mysql数据库的大致用途。  
 “Multifunctional Database（通用多功能型，好）”，  
 “Transactional Database Only（服务器类型，专注于事务处理，一般）”，  
-“Non-Transactional Database Only（非事务处理型，较简单，主要做一些监控、记数用，对MyISAM数据类型的支持仅限于non-transactional），  
+“Non-Transactional Database Only（非事务处理型，较简单，主要做一些监控、记数用，对MyISAM数据类型的支持仅限于non-
+transactional），  
 随自己的用途而选择了，我这里选择“Multifunctional Database”，按“Next”继续。  
 ![这里写图片描述](http://img-blog.csdn.net/20180318193314872?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 12、对InnoDB Tablespace进行配置，就是为InnoDB
@@ -95,7 +97,7 @@ Account（新建一个匿名用户，匿名用户可以连接数据库，不能�
 ![这里写图片描述](http://img-blog.csdn.net/20180318200013933?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 18、确认设置无误，如果有误，按“Back”返回检查。按“Execute”使设置生效。  若在这一步点击 execute 导致窗口未响应，请参见博客 [
 “MySQL安装 最后一步 execute 未响应解决方法”
-](http://blog.csdn.net/tang_chuanlin/article/details/79615152) 。  
+](https://blog.csdn.net/tang_chuanlin/article/details/79615152) 。  
 ![这里写图片描述](http://img-blog.csdn.net/20180318200021627?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 19、出现如下图说明安装成功。设置完毕，按“Finish”结束mysql的安装与配置。  
 ![这里写图片描述](http://img-blog.csdn.net/20180319164202547?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)

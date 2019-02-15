@@ -1,15 +1,15 @@
 ---
-layout:  post
-title:   在 Eclipse 上配置 tomcat8.0
-date:   2018-03-21 13:02:24
-author:  "唐传林"
+layout:		post
+title: 		在 Eclipse 上配置 tomcat8.0
+date: 		2018-03-21 13:02:24
+author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:   false
+catalog:	 true
 categories:
 - java
 tags:
-- tomcat8
-- eclipse上配置tomcat8
+- tomcat
+- Eclipse
 
 ---
 #  在 Eclipse 上配置 tomcat8.0
@@ -18,17 +18,19 @@ tags:
 
 Windows10教育版 64位 （OS内部版本：16299.125）  
 Eclipse版本： [ eclipse-jee-oxygen-2-win32-x86_64
-](http://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2
+](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2
 /eclipse-inst-win64.exe)  
 jdk版本：jdk1.8_111  
 MySQL的JDBC驱动程序版本： [ mysql-connector-java-5.1.46.zip
-](http://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.46.zip)
+](https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-
+java-5.1.46.zip)
 
 ###  在 Eclipse 上配置 tomcat8.0步骤
 
 1、 [ 到apache官网下载tomcat8.0
-](http://archive.apache.org/dist/tomcat/tomcat-8/v8.0.50/bin/apache-tomcat-8.0.50-windows-x64.zip) ，并解压。需要 [ 下载其他版本的tomcat请点击这里
-](http://archive.apache.org/dist/tomcat/) 。  
+](https://archive.apache.org/dist/tomcat/tomcat-8/v8.0.50/bin/apache-
+tomcat-8.0.50-windows-x64.zip) ，并解压。需要 [ 下载其他版本的tomcat请点击这里
+](https://archive.apache.org/dist/tomcat/) 。  
 2、打开Eclipse，依次打开Window——>preferences，  
 在preferences中打开Server——>Runtime Evironment，点击右侧的Add。  
 ![这里写图片描述](http://img-blog.csdn.net/20180320212602243?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  

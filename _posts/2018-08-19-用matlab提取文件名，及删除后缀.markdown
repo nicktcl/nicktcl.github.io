@@ -1,0 +1,31 @@
+---
+layout:		post
+title: 		用matlab提取文件名，及删除后缀
+date: 		2018-08-19 19:44:46
+author:		"唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:	 true
+tags:
+- matlab
+---
+#1、带后缀
+
+```
+fileFolder = fullfile(matlabroot,‘mathclass’,‘raccoon’); % 遍历文件夹下所有符合条件的文件  
+dirOutput = dir(fullfile(fileFolder,‘ra*.jpg’)); % 提取路径  
+fileNames = { [ dirOutput.name ] }’; % 获得符合条件文件名
+```
+
+#2、删除后缀  
+把abc.txt这个文件名中的abc提取出来赋给某个变量，就是说不要.txt后缀。
+
+
+```    
+    filename='abc.txt'
+    filename =
+    abc.txt
+    >> new=filename(1:end-4)
+    new =
+    abc
+```
+

@@ -1,11 +1,12 @@
 ---
-layout:  post
-title:   演示辅助软件 ZoomIt 的使用
-date:   2018-03-12 18:14:52
-author:  "唐传林"
+layout:     post
+title: 演示辅助软件 ZoomIt 的使用
+date: 2018-03-12 18:14:52
+author:     "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:   false
-
+catalog: true
+tags:
+    - 电脑技巧
 ---
 #  演示辅助软件 ZoomIt 的使用
 
@@ -16,10 +17,15 @@ ZoomIt
 演示或讲解文档以及毕业答辩很有帮助。
 
 [ 下载 ](http://huajun1.onlinedown.net/down/ZoomIt.zip) 解压后双击后就会后台运行。  
-[ 备用下载地址 ](http://pan.baidu.com/s/1yyABMdexHW4y8ZXFNI7vmQ) 密码：8cf3
+[ 备用下载地址 ](https://pan.baidu.com/s/1yyABMdexHW4y8ZXFNI7vmQ) 密码：8cf3
+
 
 可根据自己的习惯设置快捷键以及屏幕放大倍数。  
+
+
 ![这里写图片描述](http://img-blog.csdn.net/20180312134120201?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVGFuZ19DaHVhbmxpbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
+
 
 ##  屏幕放大功能：
 
@@ -32,12 +38,12 @@ ZoomIt
 ##  屏幕标记功能：
 
 1、按下快捷键，（默认ctrl+2，我自己喜欢设置为ctrl+1），就可进入屏幕标记模式，鼠标会变为一个圆形的笔点。  
-  
+
 2、若按住 ctrl 和 鼠标滚轮即可更改标记笔的粗细。  
-  
+
 3、通过按键（英文输入法下）可更改标记笔的颜色：  
 r 红色  ;  g 绿色  ;  b 蓝色  ;  o 橙色  ;  y 黄色  ;  p 粉色  ;  
-  
+
 4、可轻松画出不同的形状：
 
   * 按住Shift键拖动鼠标可以画出直线； 

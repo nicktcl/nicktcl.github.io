@@ -1,11 +1,12 @@
 ---
-layout:  post
-title:   Eclipse闪退解决办法
-date:   2018-03-18 18:13:23
-author:  "唐传林"
+layout:		post
+title: 		Eclipse闪退解决办法
+date: 		2018-03-18 18:13:23
+author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:   false
-
+catalog:	 true
+tags:
+- Eclipse
 ---
 #  Eclipse闪退解决办法
 
@@ -14,7 +15,7 @@ catalog:   false
 按照上一篇 [ 博客(windows10下Java环境配置)
 ](http://blog.csdn.net/tang_chuanlin/article/details/79586667) 安装完java环境后，从 [
 Eclipse管网下载eclipse绿色版
-](http://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2
+](https://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2
 /eclipse-inst-win64.exe) 打开后运行发现闪退。
 
 ##  解决办法：

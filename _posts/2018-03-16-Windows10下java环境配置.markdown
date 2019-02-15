@@ -1,15 +1,14 @@
 ---
-layout:  post
-title:   Windows10下java环境配置
-date:   2018-03-16 20:48:08
-author:  "唐传林"
+layout:		post
+title: 		Windows10下java环境配置
+date: 		2018-03-16 20:48:08
+author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:   false
+catalog:	 true
 categories:
 - java
 tags:
 - java
-- java环境配置
 
 ---
 #  Windows10下java环境配置
@@ -20,7 +19,7 @@ tags:
 #####  更新：2018年5月8日
 
 推荐使用  [ 一键安装JDK和JRE并自动配置Java环境变量
-](http://blog.csdn.net/tang_chuanlin/article/details/80240672) 。
+](http://img-blog://blog.csdn.net/tang_chuanlin/article/details/80240672) 。
 
 ##  电脑环境：
 
@@ -29,21 +28,35 @@ windows10教育版 64位 （OS内部版本：16299.125）
 ##  步骤：
 
 1、首先到Oracle网站下载对应操作系统的jdk安装包。  
-[
-http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+[http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 ](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
+
+
+
 ![这里写图片描述](http://img-blog.csdn.net/20180316200358546?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
-2、下载完成后点击打开一路点击“下一步”进行安装，安装过程中会先自动安装jdk。  
-![这里写图片描述](http://img-blog.csdn.net/20180316201409452?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-中途会弹出另外一个窗口让选择jre安装位置，点击“下一步”后再自动安装jre。  
-![这里写图片描述](http://img-blog.csdn.net/20180316201310515?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-出现以下界面则安装成功。  
-![这里写图片描述](http://img-blog.csdn.net/20180316201015692?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
+
+2、下载完成后点击打开一路点击“下一步”进行安装，安装过程中会先自动安装jdk。 
+
+![图1](http://img-blog.csdn.net/20180316201409452?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
+中途会弹出另外一个窗口让选择jre安装位置，点击“下一步”后再自动安装jre。 
+
+![图2](http://img-blog.csdn.net/20180316201310515?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
+出现以下界面则安装成功。 
+
+![图3](http://img-blog.csdn.net/20180316201015692?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70) 
+
 3、安装完成后在桌面上右键点击“此电脑”，左键点击“属性”，在弹出的窗口左侧找到“高级系统设置”并点击。  
+
 ![这里写图片描述](http://img-blog.csdn.net/20180316201603343?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 4、在弹出的窗口中右下方找到“环境变量”并点击。  
+
 ![这里写图片描述](http://img-blog.csdn.net/20180316201739420?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+
 5、设置如下变量名：  
 变量名：Path  
 变量值： ` %java_home%\bin;%java_home%\jre\bin; `  
@@ -74,8 +87,8 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
 1、在D盘根目录下新建一个“test”文件夹，在“test”文件夹中新建一个txt文件，将其重命名为“test1.java”。  
 2、用记事本或NotePad++打开“test1.java”输入如下代码。
 
-    
-    
+
+​    
     public class test1 {
         public static void main(String[] args) {
             System.out.print("Hello World!");
