@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Altium Designer——AD画PCB图步骤总结
-date: 		2018-04-03 18:01:30
-author:		"唐传林"
+layout:  post
+title:   Altium Designer——AD画PCB图步骤总结
+date:   2018-04-03 18:01:30
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 categories:
 - Altium Designer
 

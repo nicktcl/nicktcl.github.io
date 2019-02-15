@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		使用Tesseract对图片文字OCR识别
-date: 		2018-04-11 21:18:48
-author:		"唐传林"
+layout:  post
+title:   使用Tesseract对图片文字OCR识别
+date:   2018-04-11 21:18:48
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  使用Tesseract对图片文字OCR识别
@@ -51,8 +51,7 @@ Tesseract 已经有 30 年历史，开始它是惠普实验室的一款专利软
 引擎中，其识别精度也仍然是出类拔萃的。因为其免费与较好的效果，许多的个人开发者以及一些较小的团队在使用着 Tesseract
 ，诸如验证码识别、车牌号识别等应用中，不难见到 Tesseract 的身影。
 
-Tesseract在进入3.0版本后各方面功能都有了长足的发展，尤其是3.02.02版本开始提供C-
-API，使得通过动态链接库与其他编程语言混合开发成为了可能。
+Tesseract在进入3.0版本后各方面功能都有了长足的发展，尤其是3.02.02版本开始提供C-API，使得通过动态链接库与其他编程语言混合开发成为了可能。
 
 ##  笔者的电脑环境
 
@@ -60,8 +59,7 @@ Windows10教育版 64位 1709 （OS内部版本：16299.371）
 
 ##  获取,安装与配置
 
-1、下载tesseract-ocr软件。 [ 点这里进入软件下载页面。 ](https://github.com/tesseract-
-ocr/tesseract/wiki/4.0-with-LSTM#400-alpha-for-windows)  
+1、下载tesseract-ocr软件。 [ 点这里进入软件下载页面。 ](https://github.com/tesseract-ocr/tesseract/wiki/4.0-with-LSTM#400-alpha-for-windows)  
 选择4.0.0-alpha for Windows下面的 Windows Installer made with MinGW-w64 from UB
 Mannheim，点击UB Mannheim进入另一网页。  
 ![这里写图片描述](https://img-blog.csdn.net/20180411192834803?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
@@ -159,8 +157,7 @@ tesseract命令的格式为：
 
 1、 [ Python:文本识别抛弃pytesser，直接使用Tesseract ](https://www.polarxiong.com/archives
 /python-pytesser-tesseract.html)  
-2、 [ Tesseract:安装与命令行使用 ](http://www.zmonster.me/2015/04/17/tesseract-install-
-usage.html)  
+2、 [ Tesseract:安装与命令行使用 ](http://www.zmonster.me/2015/04/17/tesseract-install-usage.html)  
 3、 [ 图片文字OCR识别-tesseract-ocr4.00.00安装使用
 ](https://jingyan.baidu.com/article/219f4bf788addfde442d38fe.html)  
 4、 [ tesseract安装使用 ](https://blog.csdn.net/kiramario/article/details/53781369)

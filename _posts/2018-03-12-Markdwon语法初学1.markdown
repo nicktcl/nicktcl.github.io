@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Markdwon语法初学1
-date: 		2018-03-12 13:17:13
-author:		"唐传林"
+layout:  post
+title:   Markdwon语法初学1
+date:   2018-03-12 13:17:13
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  Markdown语法初学1

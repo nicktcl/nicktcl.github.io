@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Windows下使用ffmpeg采集音频或视频
-date: 		2018-12-24 16:08:25
-author:		"唐传林"
+layout:  post
+title:   Windows下使用ffmpeg采集音频或视频
+date:   2018-12-24 16:08:25
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 1、一开始在命令行下使用ffmpeg时执行“ffmpeg -list_devices true -f dshow -i dummy

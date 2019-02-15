@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Windows10下搭建jekyll环境
-date: 		2018-10-30 15:23:04
-author:		"唐传林"
+layout:  post
+title:   Windows10下搭建jekyll环境
+date:   2018-10-30 15:23:04
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  Win10下安装jekyll搭建个人博客
@@ -123,8 +123,7 @@ Windows10教育版 64位 1803版本（操作系统版本：17134.285）
 ](https://muxinsepith.github.io/2017/03/Win10%E7%8E%AF%E5%A2%83%E4%B8%8BJekyll%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/)  
 4、 [ Windows 运行Jekyll - Jekyll • 简单静态博客网站生成器
 ](https://jekyllcn.com/docs/windows/)  
-5、 [ 基于Docker搭建本地Jykell环境 ](https://archerwq.github.io/2017/09/21/setup-
-jekyll-locally-with-docker/)  
+5、 [ 基于Docker搭建本地Jykell环境 ](https://archerwq.github.io/2017/09/21/setup-jekyll-locally-with-docker/)  
 6、 [ 在windows下安装jekyll（一个很好地博客系统） - 简书
 ](https://www.jianshu.com/p/88e3474cef72)  
 7、 [ RubyGems 镜像 - Ruby China ](https://gems.ruby-china.com/)  
@@ -137,8 +136,7 @@ jekyll-locally-with-docker/)
 11、 [ [ruby]rubyGem出现ERROR: Could not find a valid gem时的处理方法 - 李明夕 - 博客园
 ](https://blog.csdn.net/qianggezhishen/article/details/50250253)  
 12、 [ ERROR: Could not find a valid gem ‘jekyll’ (>= 0), here is why: · Issue
-#34 · juthilo/run-jekyll-on-windows ](https://github.com/juthilo/run-jekyll-
-on-windows/issues/34)  
+#34 · juthilo/run-jekyll-on-windows ](https://github.com/juthilo/run-jekyll-on-windows/issues/34)  
 13、 [ Could not find a valid gem ‘jekyll’ 安装jekyll问题解决 - 阳光e站------zSunsoft
 Team - ITeye博客 ](http://sunxboy.iteye.com/blog/2217811)  
 14、 [ 升级Jekyll 3.0 - itmyhome的专栏 - CSDN博客
@@ -146,19 +144,16 @@ Team - ITeye博客 ](http://sunxboy.iteye.com/blog/2217811)
 15、 [ (ruby)jekyll serve启动报错,error:permission denied -bind2_其他语言_编程问答
 ](http://www.codes51.com/itwd/4509912.html)  
 16、 [ Using Jekyll as a static site generator with GitHub Pages - User
-Documentation ](https://help.github.com/articles/using-jekyll-as-a-static-
-site-generator-with-github-pages/)  
+Documentation ](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)  
 17、 [ [ruby]rubyGem出现ERROR: Could not find a valid gem时的处理方法 - 李明夕 - 博客园
 ](https://www.cnblogs.com/limingxi/p/4292463.html)  
 18、 [ ERROR: Could not find a valid gem ‘jekyll’ (>= 0), here is why: · Issue
-#34 · juthilo/run-jekyll-on-windows ](https://github.com/juthilo/run-jekyll-
-on-windows/issues/34)  
+#34 · juthilo/run-jekyll-on-windows ](https://github.com/juthilo/run-jekyll-on-windows/issues/34)  
 19、 [ Could not find a valid gem ‘jekyll’ 安装jekyll问题解决 - 阳光e站------zSunsoft
 Team - ITeye博客 ](http://sunxboy.iteye.com/blog/2217811)  
 20、 [ Ruby Gem命令详解 - 简书 ](https://www.jianshu.com/p/728184da1699)  
 21、 [ Setting up your GitHub Pages site locally with Jekyll - User
-Documentation ](https://help.github.com/articles/setting-up-your-github-pages-
-site-locally-with-jekyll/)  
+Documentation ](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)  
 22、 [ Bundle、Gem、Gemfile关系 - 简书 ](https://www.jianshu.com/p/32fcdeb5bbec)  
 23、 [ Windows安装Jekll - 不折腾会死 - SegmentFault 思否
 ](https://segmentfault.com/a/1190000010195733)  

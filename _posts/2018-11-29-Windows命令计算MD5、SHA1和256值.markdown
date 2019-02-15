@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Windows命令计算MD5、SHA1和256值
-date: 		2018-11-29 14:03:18
-author:		"唐传林"
+layout:  post
+title:   Windows命令计算MD5、SHA1和256值
+date:   2018-11-29 14:03:18
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 categories:
 - 其它
 tags:

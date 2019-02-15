@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		树莓派实时音频采集并实时传输至ubuntu
-date: 		2018-11-27 17:08:23
-author:		"唐传林"
+layout:  post
+title:   树莓派实时音频采集并实时传输至ubuntu
+date:   2018-11-27 17:08:23
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 ##  前言
@@ -15,8 +15,7 @@ catalog:	 true
 
 树莓派是一款基于ARM的微型电脑主板，以SD/MicroSD卡为内存硬盘，卡片主板周围有1/2/4个USB接口和一个10/100
 以太网接口（A型没有网口），可连接键盘、鼠标和网线，同时拥有视频模拟信号的电视输出接口和HDMI高清视频输出接口，以上部件全部整合在一张仅比信用卡稍大的主板上，具备所有PC的基本功能只需接通电视机和键盘，就能执行如电子表格、文字处理、玩游戏、播放高清视频等诸多功能。  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181127170904887.jpg?x-oss-
-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181127170904887.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)
 
 ##  步骤
 

@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Altium Designer——PCB多层板中内电层分割基本原则
-date: 		2018-11-15 23:45:27
-author:		"唐传林"
+layout:  post
+title:   Altium Designer——PCB多层板中内电层分割基本原则
+date:   2018-11-15 23:45:27
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 categories:
 - Altium Designer
 

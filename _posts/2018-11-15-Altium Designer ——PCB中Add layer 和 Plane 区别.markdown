@@ -1,18 +1,17 @@
 ---
-layout:		post
-title: 		Altium Designer ——PCB中Add layer 和 Plane 区别
-date: 		2018-11-15 21:02:52
-author:		"唐传林"
+layout:  post
+title:   Altium Designer ——PCB中Add layer 和 Plane 区别
+date:   2018-11-15 21:02:52
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 categories:
 - Altium Designer
 
 ---
 #  Altium Designer ——PCB中Add layer 和 Add Internal Plane区别
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181115210123970.jpg?x-oss-
-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181115210123970.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)
 
 1、Add layer：添加中间层。中间层可以作为走线来用，和普通的信号层没有什么区别，只是走线在内部了。是正片腐蚀。
 

@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		树莓派编译安装FFmpeg(添加H.264硬件编解码器支持)
-date: 		2018-12-25 10:55:00
-author:		"唐传林"
+layout:  post
+title:   树莓派编译安装FFmpeg(添加H.264硬件编解码器支持)
+date:   2018-12-25 10:55:00
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 ###  说明
@@ -298,6 +298,5 @@ rtmp://192.168.10.109/live/audio 时发生如下错误 FFMPEG: Unknown input for
 -yyghwnve-bms.html)
 
 6、 [ audio - FFMPEG: Unknown input format: ‘alsa’ - Raspberry Pi Stack
-Exchange ](https://raspberrypi.stackexchange.com/questions/70479/ffmpeg-
-unknown-input-format-alsa?noredirect=1&lq=1) （解决错误所参考的资料）
+Exchange ](https://raspberrypi.stackexchange.com/questions/70479/ffmpeg-unknown-input-format-alsa?noredirect=1&lq=1) （解决错误所参考的资料）
 

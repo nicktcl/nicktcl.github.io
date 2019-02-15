@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		WAV和PCM的关系和区别
-date: 		2019-02-08 18:51:14
-author:		"唐传林"
+layout:  post
+title:   WAV和PCM的关系和区别
+date:   2019-02-08 18:51:14
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 categories:
 - 音频
 tags:
@@ -38,8 +38,7 @@ tags:
 WAV：wav是一种无损的音频文件格式，WAV符合 PIFF(Resource Interchange File
 Format)规范。所有的WAV都有一个文件头，这个文件头音频流的编码参数。WAV对音频流的编码没有硬性规定，除了PCM之外，还有几乎所有支持ACM规范的编码都可以为WAV的音频流进行编码。
 
-PCM:PCM（Pulse Code Modulation----
-脉冲编码调制)。所谓PCM编码就是将声音等模拟信号变成符号化的脉冲列，再予以记录。PCM信号是由[1]、[0]等符号构成的数字信号，而未经过任何编码和压缩处理。与模拟信号比，它不易受传送系统的杂波及失真的影响。动态范围宽，可得到音质相当好的影响效果。PCM数据是最原始的音频数据完全无损。
+PCM:PCM（Pulse Code Modulation----脉冲编码调制)。所谓PCM编码就是将声音等模拟信号变成符号化的脉冲列，再予以记录。PCM信号是由[1]、[0]等符号构成的数字信号，而未经过任何编码和压缩处理。与模拟信号比，它不易受传送系统的杂波及失真的影响。动态范围宽，可得到音质相当好的影响效果。PCM数据是最原始的音频数据完全无损。
 
 简单来说：wav是一种无损的音频文件格式，pcm是没有压缩的编码方式。
 
@@ -52,8 +51,7 @@ WAV是使用PCM编码的一种音频格式。但是这不表示WAV只能使用PC
 ###  wav文件格式
 
 在文件的前44字节放置标头(header)，使播放器或编辑器能够简单掌握文件的基本信息，其内容以区块(chunk)为最小单位，每一区块长度为4字节。  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190208181833408.png?x-oss-
-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190208181833408.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)
 
 起始位址  |  区块名称  |  区块大小  |  端序  |  区块内容  |  备注  
 ---|---|---|---|---|---  

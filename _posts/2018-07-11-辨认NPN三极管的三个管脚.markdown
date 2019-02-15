@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		辨认NPN三极管的三个管脚
-date: 		2018-07-11 10:05:43
-author:		"唐传林"
+layout:  post
+title:   辨认NPN三极管的三个管脚
+date:   2018-07-11 10:05:43
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  辨认NPN三极管的三个管脚

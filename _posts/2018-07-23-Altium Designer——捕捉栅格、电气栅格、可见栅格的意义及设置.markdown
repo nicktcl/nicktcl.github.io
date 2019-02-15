@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Altium Designer——捕捉栅格、电气栅格、可见栅格的意义及设置
-date: 		2018-07-23 10:31:54
-author:		"唐传林"
+layout:  post
+title:   Altium Designer——捕捉栅格、电气栅格、可见栅格的意义及设置
+date:   2018-07-23 10:31:54
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 categories:
 - Altium Designer
 

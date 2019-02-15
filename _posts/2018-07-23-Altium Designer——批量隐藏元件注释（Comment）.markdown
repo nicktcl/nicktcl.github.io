@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Altium Designer——批量隐藏元件注释（Comment）
-date: 		2018-07-23 16:45:41
-author:		"唐传林"
+layout:  post
+title:   Altium Designer——批量隐藏元件注释（Comment）
+date:   2018-07-23 16:45:41
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 categories:
 - Altium Designer
 

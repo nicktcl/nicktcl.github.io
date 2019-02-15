@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		CSDN-Markdown编辑器语法介绍
-date: 		2018-03-12 09:36:49
-author:		"唐传林"
+layout:  post
+title:   CSDN-Markdown编辑器语法介绍
+date:   2018-03-12 09:36:49
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  欢迎使用Markdown编辑器写博客
@@ -135,8 +135,7 @@ Pipe  |  1 元  |  234
 x  =  −  b  ±  b  2  −  4  a  c  −  −  −  −  −  −  −  √  2  a  x  =  −  b  ±
 b  2  −  4  a  c  2  a
 
-更多LaTex语法请参考 [ 这儿 ](http://meta.math.stackexchange.com/questions/5020/mathjax-
-basic-tutorial-and-quick-reference) .
+更多LaTex语法请参考 [ 这儿 ](http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference) .
 
 ###  UML 图:
 

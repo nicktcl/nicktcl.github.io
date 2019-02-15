@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		解决You are using pip version 9.0.1, however version 9.0.3 is available. You should consider upgrading
-date: 		2018-04-01 15:10:38
-author:		"唐传林"
+layout:  post
+title:   解决You are using pip version 9.0.1, however version 9.0.3 is available. You should consider upgrading
+date:   2018-04-01 15:10:38
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  解决You are using pip version 9.0.1, however version 9.0.3 is available. You

@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Altium Designer——原理图中元件属性description、designator和comment的意义
-date: 		2018-03-26 12:49:37
-author:		"唐传林"
+layout:  post
+title:   Altium Designer——原理图中元件属性description、designator和comment的意义
+date:   2018-03-26 12:49:37
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 categories:
 - Altium Designer
 

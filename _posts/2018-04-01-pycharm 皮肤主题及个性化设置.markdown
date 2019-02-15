@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		pycharm 皮肤主题及个性化设置
-date: 		2018-04-01 12:39:56
-author:		"唐传林"
+layout:  post
+title:   pycharm 皮肤主题及个性化设置
+date:   2018-04-01 12:39:56
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 1.设置IDE皮肤主题

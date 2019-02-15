@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		MySQL安装 最后一步 execute 未响应解决方法
-date: 		2018-03-19 18:25:53
-author:		"唐传林"
+layout:  post
+title:   MySQL安装 最后一步 execute 未响应解决方法
+date:   2018-03-19 18:25:53
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  MySQL安装 最后一步 execute 未响应解决方法
@@ -42,8 +42,7 @@ HKEY_LOCAL_MACHINE\SYSTEM\ControlSet002\Services\Eventlog\Application\MySQL
 文件夹。  
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Eventlog\Application\MySQL  
 的文件夹。如果没有可以不用删除了。  
-8、为了稳妥，用腾迅电脑管家或者 [ 软媒魔方 ](http://sw.bos.baidu.com/sw-search-
-sp/software/84765693d3add/pcmaster_6.2.1.0_full.zip)
+8、为了稳妥，用腾迅电脑管家或者 [ 软媒魔方 ](http://sw.bos.baidu.com/sw-search-sp/software/84765693d3add/pcmaster_6.2.1.0_full.zip)
 中的cleanermaster清理一下电脑中的垃圾和无效的注册表文件;  
 9、  重启电脑。一定要重启电脑。  
 10、重启电脑后重新安装MySQL就不会再在最后一步“execute”时出现未响应了。

@@ -1,18 +1,10 @@
 ---
-layout:		post
-title: 		github pages的jekyll中markdown要注意的问题
-date: 		2019-02-15 12:36:02
-author:		"唐传林"
+layout:  post
+title:   github pages的jekyll中markdown要注意的问题
+date:   2019-02-15 12:36:02
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
-categories:
-- 博客搭建
-tags:
-- github
-- pages
-- markdown
-- jekyll
-- 个人博客
+catalog:   false
 
 ---
 ####  1、jekyll中post的markdown文件名格式如下：
@@ -23,8 +15,7 @@ tags:
 
     
     
-    ---
-    layout:		post
+    ---    layout:		post
     title: 		错误 Unable to locate package python-pip
     date: 		2019-02-14 15:10:56
     author:		"唐传林"
@@ -32,8 +23,7 @@ tags:
     catalog:	 true
     tags:
     - python
-    ---
-    
+    ---    
 
 #####  注意：
 
@@ -44,8 +34,7 @@ title中可带有单引号。
 
 ####  3、jekyll中post的markdown文件需要使用utf-8无BOM的编码，不能使用utf-8 BOM的编码。
 
-csdn编辑器导出的markdown文件默认为utf-8 BOM的编码，需要用notepad++进行转换一下。爬虫保存的markdown文件默认为utf-
-8无BOM的编码，不用进行转换。
+csdn编辑器导出的markdown文件默认为utf-8 BOM的编码，需要用notepad++进行转换一下。爬虫保存的markdown文件默认为utf-8无BOM的编码，不用进行转换。
 
 ####  4、爬虫保存的markdown文件中的图片链接有些会换行，需要人工检查。
 

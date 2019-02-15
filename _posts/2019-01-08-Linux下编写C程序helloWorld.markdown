@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Linux下编写C程序helloWorld
-date: 		2019-01-08 15:39:28
-author:		"唐传林"
+layout:  post
+title:   Linux下编写C程序helloWorld
+date:   2019-01-08 15:39:28
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 ###  前言

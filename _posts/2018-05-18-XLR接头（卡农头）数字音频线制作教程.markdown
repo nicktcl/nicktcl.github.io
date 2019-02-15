@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		XLR接头（卡农头）数字音频线制作教程
-date: 		2018-05-18 19:05:45
-author:		"唐传林"
+layout:  post
+title:   XLR接头（卡农头）数字音频线制作教程
+date:   2018-05-18 19:05:45
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  XLR接头（卡农头）数字音频线制作教程

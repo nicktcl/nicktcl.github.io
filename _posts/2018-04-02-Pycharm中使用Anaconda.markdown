@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Pycharm中使用Anaconda
-date: 		2018-04-02 19:49:30
-author:		"唐传林"
+layout:  post
+title:   Pycharm中使用Anaconda
+date:   2018-04-02 19:49:30
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  Pycharm中使用Anaconda

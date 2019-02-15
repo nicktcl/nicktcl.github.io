@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Linux下通过rdesktop连接Windows远程桌面
-date: 		2019-01-08 14:11:50
-author:		"唐传林"
+layout:  post
+title:   Linux下通过rdesktop连接Windows远程桌面
+date:   2019-01-08 14:11:50
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 ###  前言
@@ -43,8 +43,7 @@ Github仓库： [ https://github.com/rdesktop/rdesktop
 ###  windows开启远程桌面
 
 基本操作：计算机—属性—远程设置—远程。  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20190108140043464.png?x-oss-
-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190108140043464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)  
 要开启Windows远程桌面，有三个选项，第一个如果是不允许连接到本机，则选择“不允许连接到这台计算机”，这样可以阻止任何人使用远程桌面或
 RemoteApp连接到您的计算机。后面两个选项，“允许任意版本远程桌面计算机”和“仅运行使用网络级别身份验证的远程桌面的计算机”，两者差别如下：
 

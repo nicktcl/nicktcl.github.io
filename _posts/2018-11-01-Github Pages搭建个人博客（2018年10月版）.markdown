@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Github Pages搭建个人博客（2018年10月版）
-date: 		2018-11-01 20:37:24
-author:		"唐传林"
+layout:  post
+title:   Github Pages搭建个人博客（2018年10月版）
+date:   2018-11-01 20:37:24
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  Github Pages搭建个人博客（2018年10月版）
@@ -76,12 +76,10 @@ Jekyll是一个静态站点生成器，可以根据Markdown文件自动生成静
 到这里个人的博客就算已经创建完成了，但只是创建了一个静态的页面，如果需要自定义主题或在这里面写博客，下面会继续介绍！
 
 ##  参考资料 [ 在github pages网站下用jekyll制作博客教程
-](http://kresnik.wang/works/tech/2015/06/07/%E5%9C%A8github-
-pages%E7%BD%91%E7%AB%99%E4%B8%8B%E7%94%A8jekyll%E5%88%B6%E4%BD%9C%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B.html)
+](http://kresnik.wang/works/tech/2015/06/07/%E5%9C%A8github-pages%E7%BD%91%E7%AB%99%E4%B8%8B%E7%94%A8jekyll%E5%88%B6%E4%BD%9C%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B.html)
 
 1、 [ 在github pages网站下用jekyll制作博客教程
-](http://kresnik.wang/works/tech/2015/06/07/%E5%9C%A8github-
-pages%E7%BD%91%E7%AB%99%E4%B8%8B%E7%94%A8jekyll%E5%88%B6%E4%BD%9C%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B.html)
+](http://kresnik.wang/works/tech/2015/06/07/%E5%9C%A8github-pages%E7%BD%91%E7%AB%99%E4%B8%8B%E7%94%A8jekyll%E5%88%B6%E4%BD%9C%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B.html)
 
 2、 [ github上利用jekyll搭建自己的blog的操作顺序？ - 知乎
 ](https://www.zhihu.com/question/30018945?sort=created)

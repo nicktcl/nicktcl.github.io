@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Linux系统下ALSA音频编程入门
-date: 		2019-02-08 15:28:27
-author:		"唐传林"
+layout:  post
+title:   Linux系统下ALSA音频编程入门
+date:   2019-02-08 15:28:27
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 categories:
 - Linux
 tags:

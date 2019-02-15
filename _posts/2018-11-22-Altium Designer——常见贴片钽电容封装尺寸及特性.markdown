@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Altium Designer——常见贴片钽电容封装尺寸及特性
-date: 		2018-11-22 20:15:24
-author:		"唐传林"
+layout:  post
+title:   Altium Designer——常见贴片钽电容封装尺寸及特性
+date:   2018-11-22 20:15:24
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 categories:
 - Altium Designer
 
@@ -18,8 +18,7 @@ categories:
 
 比较常见的有三环电容、YAGEO电容、MURATA电容、风华电容、SAMSUNG电容、AVX电容等。Taj系列贴片钽电容是AVX公司生产的一种贴片封装的钽电解电容，是电子市场上最常见的一种型号。
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181122201444640.jpg?x-oss-
-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)  
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181122201444640.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)  
 A型（3216） 3.2X1.6 厚1.8  
 B型（3528） 3.5X2.8 厚2.1  
 C型（6032） 6.0X3.2 厚2.8  
@@ -49,8 +48,7 @@ V型（7361） 7.3X6.1 厚3.8
 ##  AVX 常规系列（TAJ）贴片钽电容：容量和额定电压
 
 （字母表示封装大小）  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20181122203529707.jpg?x-oss-
-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20181122203529707.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=,size_16,color_FFFFFF,t_70)
 
 ##  参考资料
 

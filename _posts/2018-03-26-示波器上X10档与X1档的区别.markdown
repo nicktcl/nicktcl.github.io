@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		示波器上X10档与X1档的区别
-date: 		2018-03-26 21:09:05
-author:		"唐传林"
+layout:  post
+title:   示波器上X10档与X1档的区别
+date:   2018-03-26 21:09:05
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  示波器上X10档与X1档的区别

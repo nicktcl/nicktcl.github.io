@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Matlab读取Excel各个子表的数据进行拟合
-date: 		2018-08-18 16:26:48
-author:		"唐传林"
+layout:  post
+title:   Matlab读取Excel各个子表的数据进行拟合
+date:   2018-08-18 16:26:48
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  Matlab读取Excel各个子表的数据进行拟合
@@ -98,8 +98,7 @@ catalog:	 true
 9、 [ 用excel画拟合函数，导出公式_百度知道 ](https://zhidao.baidu.com/question/125487254)  
 10、 [ excel相邻两列的数据自动求差值_百度知道
 ](https://zhidao.baidu.com/question/490050581813645812.html)  
-11、 [ Excel 两个工作薄切换的快捷键是什么？-Excel基础应用-ExcelHome技术论坛 -
-](http://club.excelhome.net/thread-816190-1-1.html)  
+11、 [ Excel 两个工作薄切换的快捷键是什么？-Excel基础应用-ExcelHome技术论坛 -](http://club.excelhome.net/thread-816190-1-1.html)  
 12、 [ Excel2013如何将某数据范围的单元格以某种颜色突出显示_excel2013_office之家
 ](http://www.icanzc.com/excel/4322.html)  
 13、 [ Matlab实现保存图片到指定文件夹 - CSDN博客

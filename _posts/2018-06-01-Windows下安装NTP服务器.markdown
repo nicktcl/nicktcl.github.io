@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Windows下安装NTP服务器
-date: 		2018-06-01 15:00:25
-author:		"唐传林"
+layout:  post
+title:   Windows下安装NTP服务器
+date:   2018-06-01 15:00:25
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  NTP服务器介绍
@@ -85,9 +85,7 @@ Windows Server 2016现在在某些操作条件下支持1ms的时间精度。
 9、 [ Network Time Protocol - Wikipedia
 ](https://en.wikipedia.org/wiki/Network_Time_Protocol)  
 10、 [ 运行net start 命令时，提示发生系统错误5，拒绝访问。 - Microsoft Community
-](https://answers.microsoft.com/zh-
-hans/windows/forum/windows8_1-performance/%E8%BF%90%E8%A1%8Cnet-
-start/bec244e5-6385-4950-adc8-0d004905e41a?auth=1)  
+](https://answers.microsoft.com/zh-hans/windows/forum/windows8_1-performance/%E8%BF%90%E8%A1%8Cnet-start/bec244e5-6385-4950-adc8-0d004905e41a?auth=1)  
 11、 [ cmd net start 服务 提示系统错误5 拒绝访问怎么办？-CSDN论坛
 ](https://bbs.csdn.net/topics/320235799)  
 12、 [ 怎么获得win7最高管理员权限

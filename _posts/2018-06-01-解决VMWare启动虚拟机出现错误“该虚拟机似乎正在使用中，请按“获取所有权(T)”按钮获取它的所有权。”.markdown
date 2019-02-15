@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		解决VMWare启动虚拟机出现错误“该虚拟机似乎正在使用中，请按“获取所有权(T)”按钮获取它的所有权。”
-date: 		2018-06-01 09:35:56
-author:		"唐传林"
+layout:  post
+title:   解决VMWare启动虚拟机出现错误“该虚拟机似乎正在使用中，请按“获取所有权(T)”按钮获取它的所有权。”
+date:   2018-06-01 09:35:56
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  解决VMWare启动虚拟机出现错误“该虚拟机似乎正在使用中，请按“获取所有权(T)”按钮获取它的所有权。”

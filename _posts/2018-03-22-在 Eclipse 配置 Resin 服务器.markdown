@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		在 Eclipse 配置 Resin 服务器
-date: 		2018-03-22 21:29:19
-author:		"唐传林"
+layout:  post
+title:   在 Eclipse 配置 Resin 服务器
+date:   2018-03-22 21:29:19
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  在 Eclipse 部署Resin服务器
@@ -18,8 +18,7 @@ Eclipse版本： [ eclipse-jee-oxygen-2-win32-x86_64
 /eclipse-inst-win64.exe)  
 Resin版本：Resin4.0  
 MySQL的JDBC驱动程序版本： [ mysql-connector-java-5.1.46.zip
-](https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-
-java-5.1.46.zip)
+](https://cdn.mysql.com//Downloads/Connector-J/mysql-connector-java-5.1.46.zip)
 
 ###  在 Eclipse 配置 Resin 服务器的步骤
 

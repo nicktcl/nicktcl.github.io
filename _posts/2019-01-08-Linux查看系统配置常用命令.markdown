@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Linux查看系统配置常用命令
-date: 		2019-01-08 15:50:28
-author:		"唐传林"
+layout:  post
+title:   Linux查看系统配置常用命令
+date:   2019-01-08 15:50:28
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 

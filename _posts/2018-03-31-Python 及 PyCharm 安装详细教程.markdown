@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Python 及 PyCharm 安装详细教程
-date: 		2018-03-31 18:57:27
-author:		"唐传林"
+layout:  post
+title:   Python 及 PyCharm 安装详细教程
+date:   2018-03-31 18:57:27
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  Python 及 PyCharm 安装详细教程
@@ -78,8 +78,7 @@ https://www.jetbrains.com/pycharm/download/#section=windows
 ](https://blog.csdn.击桌面上的pycharm图标，进入到pycharm中，如下图所示：击桌面上的pycharm图标，进入到pycharm中，如下图所示：net/jiajikang_jjk/article/details/79523438#insertcode)  
 2、 [ Python 2.7版本与3.6的不同
 ](https://blog.csdn.net/kwame211/article/details/77862166)  
-3、 [ Python 2.7.x 和 3.x 版本的重要区别 ](http://www.techug.com/post/the-difference-
-of-python2-and-python3.html)  
+3、 [ Python 2.7.x 和 3.x 版本的重要区别 ](http://www.techug.com/post/the-difference-of-python2-and-python3.html)  
 4、 [ Pycharm及python安装详细教程
 ](https://blog.csdn.net/qq_29883591/article/details/52664478)
 

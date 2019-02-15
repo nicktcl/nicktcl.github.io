@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Linux下卸载用 make install 编译安装的软件
-date: 		2019-01-08 14:15:40
-author:		"唐传林"
+layout:  post
+title:   Linux下卸载用 make install 编译安装的软件
+date:   2019-01-08 14:15:40
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 ###  前言

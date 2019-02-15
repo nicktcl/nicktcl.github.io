@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		树莓派不用显示器打开ssh
-date: 		2018-12-24 16:02:57
-author:		"唐传林"
+layout:  post
+title:   树莓派不用显示器打开ssh
+date:   2018-12-24 16:02:57
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 用软件Win32DiskImager-0.9.5-binary写完树莓派镜像到内存卡后，

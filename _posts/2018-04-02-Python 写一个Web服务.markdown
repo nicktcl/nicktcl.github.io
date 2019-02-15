@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Python 写一个Web服务
-date: 		2018-04-02 15:23:22
-author:		"唐传林"
+layout:  post
+title:   Python 写一个Web服务
+date:   2018-04-02 15:23:22
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  Python 写一个Web服务

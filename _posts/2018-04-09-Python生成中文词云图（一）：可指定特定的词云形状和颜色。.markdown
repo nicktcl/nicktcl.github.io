@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Python生成中文词云图（一）：可指定特定的词云形状和颜色。
-date: 		2018-04-09 15:25:36
-author:		"唐传林"
+layout:  post
+title:   Python生成中文词云图（一）：可指定特定的词云形状和颜色。
+date:   2018-04-09 15:25:36
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 #  Python生成中文词云图

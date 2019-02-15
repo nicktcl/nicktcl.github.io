@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Windows下使用ffmpeg采集音频
-date: 		2019-01-15 20:44:52
-author:		"唐传林"
+layout:  post
+title:   Windows下使用ffmpeg采集音频
+date:   2019-01-15 20:44:52
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 categories:
 - ffmpeg
 tags:

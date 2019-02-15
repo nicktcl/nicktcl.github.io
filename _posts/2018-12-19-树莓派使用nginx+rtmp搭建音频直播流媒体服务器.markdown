@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		树莓派使用nginx+rtmp搭建音频直播流媒体服务器
-date: 		2018-12-19 15:55:07
-author:		"唐传林"
+layout:  post
+title:   树莓派使用nginx+rtmp搭建音频直播流媒体服务器
+date:   2018-12-19 15:55:07
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 
 ---
 ##  前言
@@ -31,8 +31,7 @@ Media Server/Ultrant Media Server/red5等。
 
 ###  NGINX-RTMP 流媒体服务器
 
-基于NGINX模块，使用C语言编写的流媒体服务器，也是目前市场上使用最多的流媒体服务器。伴随着2012年CDN业务的扩展，直播业务需求暴涨，由于NGINX-
-RTMP中直播点播共用一套服务器，且用户熟悉信任NGINX；NGINX-RTMP逐渐处于行业垄断地位。
+基于NGINX模块，使用C语言编写的流媒体服务器，也是目前市场上使用最多的流媒体服务器。伴随着2012年CDN业务的扩展，直播业务需求暴涨，由于NGINX-RTMP中直播点播共用一套服务器，且用户熟悉信任NGINX；NGINX-RTMP逐渐处于行业垄断地位。
 
 ##  场景介绍
 
@@ -128,16 +127,13 @@ armv6l GNU/Linux `
 ](https://blog.csdn.net/zizi7/article/details/54347223)  
 2、 [ 树莓派nginx+rtmp搭建直播流媒体服务 - 夜魂 - 开源中国
 ](https://my.oschina.net/yehun/blog/1633459)  
-3、 [ 树莓派使用nginx+rtmp搭建直播服务器 - 程序园 ](http://www.voidcn.com/article/p-ebijbfwd-
-bad.html)  
+3、 [ 树莓派使用nginx+rtmp搭建直播服务器 - 程序园 ](http://www.voidcn.com/article/p-ebijbfwd-bad.html)  
 4、 [ 树莓派使用nginx+rtmp搭建直播服务器 | Cyckerr
 ](https://cyckerr.github.io/blog/2017/09/29/SmartQQ/)  
 5、 [ 使用树莓派实现24小时不间断直播 - EdmondFrank’s 时光足迹
-](https://edmondfrank.github.io/blog/2018/02/12/shi-yong-shu-mei-pai-shi-xian-
-24xiao-shi-bu-jian-duan-zhi-bo/)  
+](https://edmondfrank.github.io/blog/2018/02/12/shi-yong-shu-mei-pai-shi-xian-24xiao-shi-bu-jian-duan-zhi-bo/)  
 6、 [ 用树莓派做 RTMP 流直播服务器，可推送至斗鱼直播 | 树莓派实验室
-](http://shumeipai.nxez.com/2017/11/01/build-rtmp-stream-live-server-with-
-raspberry-pi.html)  
+](http://shumeipai.nxez.com/2017/11/01/build-rtmp-stream-live-server-with-raspberry-pi.html)  
 7、 [ FFmpeg 录制桌面、麦克风、摄像头 - 勤能补拙 - CSDN博客
 ](https://blog.csdn.net/candcplusplus/article/details/53955012)  
 8、 [ ffmpeg 音视频集大成者之学习-iibull-ChinaUnix博客

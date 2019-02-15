@@ -1,10 +1,10 @@
 ---
-layout:		post
-title: 		Altium Designer——usb信号线布线注意的问题——应使用差分布线
-date: 		2018-11-15 14:50:22
-author:		"唐传林"
+layout:  post
+title:   Altium Designer——usb信号线布线注意的问题——应使用差分布线
+date:   2018-11-15 14:50:22
+author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:	 true
+catalog:   false
 categories:
 - Altium Designer
 
