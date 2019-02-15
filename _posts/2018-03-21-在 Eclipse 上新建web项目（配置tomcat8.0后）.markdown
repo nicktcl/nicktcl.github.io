@@ -49,7 +49,7 @@ WEB配置文件：web.xml
 8、写入以下测试代码并且保存。
 
 
-``` 
+``` java
     package Hello;
     import java.io.IOException;  
     import java.io.PrintWriter;  
@@ -86,7 +86,7 @@ WEB配置文件：web.xml
 11、在web.xml中输入如下内容并且保存。
 
 
-``` 
+``` xml
  <?xml version="1.0" encoding="UTF-8"?>
     <web-app xmlns="http://java.sun.com/xml/ns/javaee"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
