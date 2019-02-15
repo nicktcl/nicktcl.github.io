@@ -5,8 +5,7 @@ date: 		2019-01-08 14:15:40
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-    - linux
+
 ---
 ###  前言
 
@@ -22,7 +21,7 @@ tags:
 ###  例子如下：
 
     
-```    
+    
           whereis python
           python: /usr/bin/python2.6-config /usr/bin/python2.6 /usr/bin/python /usr/lib/python2.6 /usr/lib64/python2.6 /usr/local/bin/python3.3m-config /usr/local/bin/python3.3m /usr/local/bin/python3.3 /usr/local/bin/python3.3-config /usr/local/lib/python3.3 /usr/include/python2.6 /usr/share/man/man1/python.1.gz
           rm -rf /usr/bin/python2.6-config
@@ -30,5 +29,5 @@ tags:
           rm -rf /usr/bin/python
           rm -rf /usr/lib/python2.6
           rm -rf /usr/lib64/python2.6
-```    
+    
 

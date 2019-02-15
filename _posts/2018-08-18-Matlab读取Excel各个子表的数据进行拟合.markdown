@@ -5,9 +5,7 @@ date: 		2018-08-18 16:26:48
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- matlab
-- 数据拟合
+
 ---
 #  Matlab读取Excel各个子表的数据进行拟合
 
@@ -23,7 +21,7 @@ tags:
 #  Matlab 代码实现
 
     
-```matlab    
+    
     clc;clear;
     ReadRange = '';
     y=[-65 -64 -63 -62 -61 -60 -59 -58 -57 -56 -55 -54 -53 -52 -51 -50 -49 -48 -47 -46 -45 -44 -43 -42 -41 -40 -39 -38 -37 -36 -35 -34 -33 -32 -31 -30];
@@ -65,17 +63,16 @@ tags:
         end
         fprintf('\n子表(%s)  处理完成。\n\n',folder)
     end
-```
 
 #  运行结果
 
-![这里写图片描述](http://img-blog.csdn.net/20180818155807812?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180818155807812?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 #  生成拟合好的曲线的图片
 
-![这里写图片描述](http://img-blog.csdn.net/20180818160140771?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-![这里写图片描述](http://img-blog.csdn.net/20180818160148775?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-![这里写图片描述](http://img-blog.csdn.net/20180818160156890?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180818160140771?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180818160148775?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180818160156890?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 #  总结
 

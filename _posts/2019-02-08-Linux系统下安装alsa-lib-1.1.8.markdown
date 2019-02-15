@@ -5,9 +5,7 @@ date: 		2019-02-08 17:45:48
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- linux
-- alsa编程 
+
 ---
 ###  前言
 
@@ -26,37 +24,37 @@ lib-1.1.8.tar.bz2 ](ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.8.tar.bz2)
 1、下载alsa-lib-1.1.8
 
     
-```   
+    
     wget ftp://ftp.alsa-project.org/pub/lib/alsa-lib-1.1.8.tar.bz2
-```    
+    
 
 2、解压
 
     
-```    
+    
     tar jxvf alsa-lib-1.1.8.tar.bz2
-```    
+    
 
 3、检测你的安装平台的目标特征
 
     
-```    
+    
     ./configure
-```    
+    
 
 4、编译
 
     
-```    
+    
     make
-```    
+    
 
 5、安装
 
     
-```    
+    
     make install
-```    
+    
 
 ###  参考资料
 

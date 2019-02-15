@@ -5,16 +5,14 @@ date: 		2018-04-10 10:01:54
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- python
-- 词云
+
 ---
 #  Python生成中文词云图（二）：不可指定词云特定的形状和颜色。
 
 ###  什么是词云？
 
 首先，什么是词云呢？词云又叫文字云，是对文本数据中出现频率较高的“关键词”在视觉上的突出呈现，形成关键词的渲染形成类似云一样的彩色图片，从而一眼就可以领略文本数据的主要表达意思。  
-![这里写图片描述](http://img-blog.csdn.net/20180402195632505?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180402195632505?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ###  本文目的：
 
@@ -31,7 +29,7 @@ Python生成英文词云图请参见博客 [ Python生成英文词云图
 ###  代码实现：
 
     
-```python    
+    
     #coding=utf-8
     #Version:python3.6.0
     #添加自定义分词
@@ -123,13 +121,10 @@ Python生成英文词云图请参见博客 [ Python生成英文词云图
     #画云图，显示
     #保存云图
     wc.to_file("tuoyuan3.png")
-```
-
-
 
 ###  生成的中文词云图：
 
-![这里写图片描述](http://img-blog.csdn.net/20180410100102101?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180410100102101?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ###  参考资料：
 

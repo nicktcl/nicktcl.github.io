@@ -5,8 +5,7 @@ date: 		2018-04-19 16:48:44
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- matlab
+
 ---
 #  matlab绘制散点图——指定散点落于一个圆形区域内
 
@@ -17,7 +16,7 @@ tags:
 ##  matlab代码实现
 
     
-```matlab    
+    
     % 海豚进入前沙丁鱼群的初始状态
     N=200;%沙丁鱼群中沙丁鱼的数量
     % 沙丁鱼群圆形区域的圆心
@@ -47,9 +46,8 @@ tags:
     box on;
     % 显示坐标轴
     axis on;
-```
 
 ##  运行效果
 
-![这里写图片描述](http://img-blog.csdn.net/20180419164736842?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180419164736842?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 

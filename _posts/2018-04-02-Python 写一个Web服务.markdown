@@ -5,8 +5,6 @@ date: 		2018-04-02 15:23:22
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- python
 
 ---
 #  Python 写一个Web服务
@@ -17,8 +15,8 @@ tags:
 
 ##  代码实现：
 
-
-```python
+    
+    
     # coding:utf-8
     
     import socket   # 导入socket包
@@ -56,17 +54,16 @@ tags:
             handle_client_process = Process(target=handle_client, args=(client_socket,))
             handle_client_process.start()# 启动进程
             client_socket.close()   #关闭socket
-```
 
 运行后在浏览器输入：127.0.0.1:8000
 
 ###  http页面显示如下：
 
-![这里写图片描述](http://img-blog.csdn.net/20180402152152374?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180402152152374?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ###  控制台输出如下：
 
-![这里写图片描述](http://img-blog.csdn.net/20180402152242402?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180402152242402?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 参考资料：  
 1、 [ python 写一个静态服务（实战）

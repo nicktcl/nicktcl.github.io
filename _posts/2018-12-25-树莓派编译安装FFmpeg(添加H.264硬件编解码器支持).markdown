@@ -5,10 +5,7 @@ date: 		2018-12-25 10:55:00
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- 音频处理
-- ffmepg
-- 树莓派
+
 ---
 ###  说明
 
@@ -24,65 +21,65 @@ FFmpeg是一套开源的音视频编解码库，有非常强大的功能，包�
   1. 更新源并安装git 
 
     
-```    
+    
     sudo apt-get update
     sudo apt-get install git
-```    
+    
 
 2、下载x264源码
 
     
-```    
+    
      git clone https://git.videolan.org/git/x264.git
-```    
+    
 
 3、进入x264目录
 
     
-```   
+    
     cd x264
-```    
+    
 
 4、新建一个名为 config_x264.sh 的文件
 
     
-```    
+    
     touch config_x264.sh
-```    
+    
 
 5、使用nano打开 config_x264.sh
 
     
-```    
+    
     nano config_x264.sh
-```    
+    
 
 6、添加如下内容
 
     
-```   
+    
     #!/bin/sh
     ./configure \
     --disable-shared --enable-static \
     --enable-strip \
     --disable-cli
-```    
+    
 
 7、然后增加执行权限
 
     
-```    
+    
     chmod +x config_x264.sh
-```
+    
 
 8、依此进行以下每一行命令
 
     
-```    
+    
     ./config_x264.sh
     make -j4
     sudo make install
-```    
+    
 
 执行 ` make -j4 ` 时会花费点10分钟左右，需要耐心等待
 
@@ -92,42 +89,42 @@ FFmpeg是一套开源的音视频编解码库，有非常强大的功能，包�
 ](http://ffmpeg.org/download.html) ，当前版本为 ffmpeg-4.1.tar.bz2
 
     
-```    
+    
     wget https://ffmpeg.org/releases/ffmpeg-4.1.tar.bz2
-```    
+    
 
 2、解压
 
     
-```    
+    
     tar jxvf ffmpeg-4.1.tar.bz2
-```    
+    
 
 3、进入解压得到的ffmpeg目录
 
     
-```    
+    
     cd ffmpeg-4.1
-```    
+    
 
 4、新建一个名为 config_ffmpeg.sh 的脚本文件
 
     
-```    
+    
     touch config_ffmpeg.sh
-```    
+    
 
 5、使用nano打开 config_ffmpeg.sh
 
     
-```    
+    
     nano config_ffmpeg.sh
-```    
+    
 
 6、输入如下内容：
 
     
-```    
+    
     #!/bin/sh
     PREFIX=/usr/local
     ./configure \
@@ -222,23 +219,23 @@ FFmpeg是一套开源的音视频编解码库，有非常强大的功能，包�
     --enable-hwaccel=h264_mmal \
     --enable-decoder=h264_mmal \
     \
-```    
+    
 
 7、然后增加执行权限
 
     
-```    
+    
     chmod +x config_ffmpeg.sh
-```    
+    
 
 8、依此进行以下每一行命令
 
     
-```    
+    
     ./config_ffmpeg.sh
     make -j4
     sudo make install
-```    
+    
 
 执行 ` make -j4 ` 时会花费大约1小时左右，需要耐心等待。
 
@@ -261,9 +258,9 @@ I believe you need a package called “libomxil-bellagio-dev” that will
 provide the OMX header files.
 
     
- ```   
+    
     sudo apt-get install libomxil-bellagio-dev
- ```   
+    
 
   
 

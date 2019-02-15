@@ -5,9 +5,7 @@ date: 		2018-05-11 11:45:31
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- windows
-- linux
+
 ---
 #  Win10安装Ubuntu子系统教程
 
@@ -23,9 +21,9 @@ on Windows用一种应用软件的方式实现了系统软件的功能。
 1、以管理员身份打开PowerShell并运行：
 
     
-```cmd   
+    
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-```
+
 2、出现提示时重新启动计算机。  
 3、从win10开始菜单打开Microsoft store并选择您最喜欢的Linux发行版。
 
@@ -34,24 +32,24 @@ on Windows用一种应用软件的方式实现了系统软件的功能。
   * SLES 
   * Kali Linux 
   * Debian GNU/Linux   
-![这里写图片描述](http://img-blog.csdn.net/20180511113338819?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180511113338819?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 4、安装完成后在win10开始菜单中windows10应用中找到ubuntu并打开，开始自动安装。  
-![这里写图片描述](http://img-blog.csdn.net/20180511113650317?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180511113650317?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 5、小写字母输入用户名。  
-![这里写图片描述](http://img-blog.csdn.net/2018051111373485?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/2018051111373485?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 6、输入密码。  
-![这里写图片描述](http://img-blog.csdn.net/20180511113821911?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180511113821911?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 7、出现下图就说明安装成功了。  
-![这里写图片描述](http://img-blog.csdn.net/20180511113922862?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180511113922862?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ##  关于卸载子系统
 
 在控制面板中不能卸载windows10应用，所以要到windows10所有设置中卸载。  
 1、打开windows10所有设置；  
-![这里写图片描述](http://img-blog.csdn.net/20180511114142528?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180511114142528?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 2、点击“应用”。  
 3、在搜索框中输入“ubuntu”找到ubuntu子系统应用。  
-![这里写图片描述](http://img-blog.csdn.net/20180511114411507?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180511114411507?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 4、左键点击，然后再点“卸载”。
 
 ##  参考资料：

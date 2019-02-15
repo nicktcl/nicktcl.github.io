@@ -8,9 +8,10 @@ catalog:	 true
 categories:
 - Linux
 tags:
-- 音频处理
+- alsa音频
 - alsa编程
 - linux
+- alsa驱动
 
 ---
 ###  1、Linux 系统下三大主流声卡驱动程序集
@@ -44,9 +45,9 @@ ALSA包含插件功能，使用插件可以扩展新的声卡驱动，包括完�
 第一步当然是安装 ALSA 驱动程序与音频库。
 
     
-```    
+    
      sudo apt-get install libasound2-dev
-```    
+    
 
 当前 ALSA 有两个分支，一个是以前的0.5版本，一个是现在的0.9。ALSA的开发者 已经不支持0.5版本了，所以我们要使用0.9。  
 大家可以在 ALSA 的主页 [ www.alsa-project.org ](http://www.alsa-project.org) 上下载安装。  

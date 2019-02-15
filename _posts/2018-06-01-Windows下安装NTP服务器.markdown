@@ -5,9 +5,7 @@ date: 		2018-06-01 15:00:25
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- windows
-- ntp
+
 ---
 #  NTP服务器介绍
 
@@ -44,29 +42,29 @@ Windows Server 2016现在在某些操作条件下支持1ms的时间精度。
 
 1、在Windows 服务器下，按住“ ` windows+r ` ”打开“ ` 运行 ` ”对话框，输入 ` regedit `
 ，点击“确定”打开注册表。  
-![这里写图片描述](http://img-blog.csdn.net/20180601104732388?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180601104732388?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 2、在注册表中依次展开：HKEY_LOCAL_MACHINE、SYSTEM、CurrentControlSet、Services、W32Time、TimeProviders、NtpServer，  
 在NtpServer项的右侧键值ENablied，将默认的0改为1，1为启用NTP服务器。  
-![这里写图片描述](http://img-blog.csdn.net/20180601105045238?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-![这里写图片描述](http://img-blog.csdn.net/2018060110531145?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-![这里写图片描述](http://img-blog.csdn.net/20180601105328288?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180601105045238?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/2018060110531145?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180601105328288?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 3、再在注册表中依次展开：HKEY_LOCAL_MACHINE、SYSTEM、CurrentControlSet、Services、W32Time、Config  
 找到Config项右侧的AnnounceFlags。  
 把默认的10改为5，5的意思就是自身为可靠的时间源。  
-![这里写图片描述](http://img-blog.csdn.net/20180601105805783?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-![这里写图片描述](http://img-blog.csdn.net/20180601105812626?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-![这里写图片描述](http://img-blog.csdn.net/20180601105820134?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180601105805783?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180601105812626?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180601105820134?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 4、修改完以上之后关闭注册表编辑器，win7下  以管理员身份打开命令行  如下图。Windows10则用Windows+X+A以管理员身份打开命令行。  
-![这里写图片描述](http://img-blog.csdn.net/20180601111833480?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180601111833480?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 5、在命令提示符中输入： ` net stop w32Time ` ，回车  
 等待NTP服务停止。  
 然后再输入： ` net start w32Time ` ，回车  
 启动NTP服务。  
-![这里写图片描述](http://img-blog.csdn.net/20180601112253482?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180601112253482?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 6、测试，局域网内windows电脑同步成功！  
-![这里写图片描述](http://img-blog.csdn.net/201806011449215?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/201806011449215?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 7、测试，在ubuntu虚拟机中，在终端输入命令“ ` sudo ntpdate 192.168.10.241 ` ，”出现如下界面则同步成功！  
-![这里写图片描述](http://img-blog.csdn.net/20180601144955348?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180601144955348?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 #  参考资料
 

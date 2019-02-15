@@ -5,8 +5,7 @@ date: 		2018-06-01 09:35:56
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- vmware
+
 ---
 #  解决VMWare启动虚拟机出现错误“该虚拟机似乎正在使用中，请按“获取所有权(T)”按钮获取它的所有权。”
 
@@ -19,7 +18,7 @@ tags:
 #  问题描述：
 
 在VMWare中打开之前一直使用的Windows 7（64位）虚拟机时出现了如下错误提示：  
-![这里写图片描述](http://img-blog.csdn.net/2018060109235252?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5NTE2ODU5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/2018060109235252?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5NTE2ODU5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 #  问题原因：
 
@@ -29,12 +28,12 @@ tags:
 
 1、进入到存放此台Vmware虚拟机虚拟磁盘文件及配置文件存放的位置（也就是弹出提示窗口上的路径），在这里是 C:\Virtual
 Machines\Windows 7 x64这个目录下，找到后缀为.lck文件夹。  
-![这里写图片描述](http://img-blog.csdn.net/20180601092558869?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5NTE2ODU5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180601092558869?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5NTE2ODU5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 2、然后，将后缀为.lck的文件夹删除，或者或避免删错可以移动到备份文件夹中，也可以直接重命名此文件夹，在这里我将文件夹Windows 10
 x64.vmx.lck改为Windows 10 x64.vmx.lck.backup。  
-![这里写图片描述](http://img-blog.csdn.net/20180601093038520?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5NTE2ODU5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180601093038520?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5NTE2ODU5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 3、然后重新打开虚拟机，发现此虚拟机可以正常打开了，这样就成功的解决了“该虚拟机似乎正在使用中”问题。  
-![这里写图片描述](http://img-blog.csdn.net/20180601093216653?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5NTE2ODU5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180601093216653?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5NTE2ODU5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 #  参考资料：
 

@@ -8,8 +8,8 @@ catalog:	 true
 categories:
 - java
 tags:
-- tomcat
-- Eclipse
+- tomcat8
+- eclipse上配置tomcat8
 
 ---
 #  在 Eclipse 上配置 tomcat8.0
@@ -33,18 +33,18 @@ tomcat-8.0.50-windows-x64.zip) ，并解压。需要 [ 下载其他版本的tomc
 ](https://archive.apache.org/dist/tomcat/) 。  
 2、打开Eclipse，依次打开Window——>preferences，  
 在preferences中打开Server——>Runtime Evironment，点击右侧的Add。  
-![这里写图片描述](http://img-blog.csdn.net/20180320212602243?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-![这里写图片描述](http://img-blog.csdn.net/20180320212803395?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](//img-blog.csdn.net/20180320212602243?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](//img-blog.csdn.net/20180320212803395?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 3、在点击Add后打开的窗口中选择tomcat8.0，然后点击Next。  
-![这里写图片描述](http://img-blog.csdn.net/20180321094933499?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](//img-blog.csdn.net/20180321094933499?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 4、添加解压后的Tomcat8.0，点击’Finish’ 。  
-![这里写图片描述](http://img-blog.csdn.net/20180321095654531?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](//img-blog.csdn.net/20180321095654531?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 5、如下图所示添加成功，点击右下角“Apply and close”。  
-![这里写图片描述](http://img-blog.csdn.net/20180321095908675?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](//img-blog.csdn.net/20180321095908675?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 6、运行Tomcat：打开bin目录——>双击startup.bat。  
-![这里写图片描述](http://img-blog.csdn.net/20180321100304436?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](//img-blog.csdn.net/20180321100304436?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 7、出现如下窗口和内容。  
-![这里写图片描述](http://img-blog.csdn.net/20180321125939290?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](//img-blog.csdn.net/20180321125939290?watermark/2/text/Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 8、打开浏览器，输入“ [ http://localhost:8080 ](http://localhost:8080)
 ”出现下面这个页面，恭喜你，可以开始做web应用了。
 

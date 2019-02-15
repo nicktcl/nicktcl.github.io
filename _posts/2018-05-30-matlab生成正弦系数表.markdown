@@ -5,8 +5,7 @@ date: 		2018-05-30 15:40:31
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- matlab
+
 ---
 #  matlab生成正弦系数表
 
@@ -18,13 +17,13 @@ tags:
 #  matlab代码实现：
 
     
-```matlab    
+    
     Fs=10000; %采样率
     fc=500; %载波频率
     F=50; %基带信号频率
     t=1/Fs:1/Fs:0.03;
     carrier=1000*cos(2*pi*fc*t);
-    signal = 1000*cos(2*p``i*F*t);
+    signal = 1000*cos(2*pi*F*t);
     DSBmodout= signal.* carrier; %双边带调制
     figure(1)
     plot(t, signal);
@@ -36,27 +35,26 @@ tags:
     A=fix(signal'); %基带信号样值取整
     save('s.dat','S','-ascii');
     save('c.dat','C','-ascii'); %保存数据
-```
 
 #  代码结果：
 
 ###  1、载波信号（500Hz）
 
-![这里写图片描述](http://img-blog.csdn.net/20180530153906534?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180530153906534?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ###  2、基带信号（50Hz）
 
-![这里写图片描述](http://img-blog.csdn.net/20180530153819248?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180530153819248?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ###  3、双边带调制输出信号
 
-![这里写图片描述](http://img-blog.csdn.net/20180530153934686?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180530153934686?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ###  4、输出的载波信号正弦系数表
 
-![这里写图片描述](http://img-blog.csdn.net/20180530154218976?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180530154218976?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ###  5、输出的基带信号正弦系数表
 
-![这里写图片描述](http://img-blog.csdn.net/20180530154240184?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180530154240184?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 

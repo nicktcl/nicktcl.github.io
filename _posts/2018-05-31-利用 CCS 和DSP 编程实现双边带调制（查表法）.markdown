@@ -5,8 +5,7 @@ date: 		2018-05-31 21:36:17
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- dsp
+
 ---
 #  利用 CCS 和DSP 编程实现双边带调制（查表法）
 
@@ -32,18 +31,18 @@ Instrument,TI）出品的代码开发和调试套件。TI公司的产品线中�
 ](https://blog.csdn.net/tang_chuanlin/article/details/80511065) ，修改这两个文件的头部,
 使之成为符合CCS 文件I/O 的要求格式。  
 载波信号的正弦系数表：  
-![这里写图片描述](http://img-blog.csdn.net/2018053015541596?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/2018053015541596?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 基带信号的正弦系数表：  
-![这里写图片描述](http://img-blog.csdn.net/201805301555096?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/201805301555096?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 2、首先将CCS设置为软件仿真模式（simulate），步骤如下gif动图所示。  
-![这里写图片描述](http://img-blog.csdn.net/20180530160710130?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180530160710130?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 3、打开ccs新建工程，并向工程中加入asm.cmd文件和ASMtest6.asm，步骤如下gif动图所示。CMD文件的作用请见博客 [
 CCS中CMD文件解析 ](https://blog.csdn.net/u011392772/article/details/49760897) 。  
-![这里写图片描述](http://img-blog.csdn.net/20180530161357809?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180530161357809?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 asm.cmd文件代码如下：
 
     
-```cmd    
+    
     MEMORY
     {
      PAGE 0 :
@@ -106,42 +105,40 @@ ASMtest6.asm文件代码如下：
         NOP                 ;完成任务后程序进入空操作
         B LOOP                  
         .end
-```
-
 
 4、由于这里我们使用了 I/O 空间, 所以需要配置I/O 空间, 使得0x0000 到0x0003 地址是可读  
 写的，步骤如下gif动图所示。  
-![这里写图片描述](http://img-blog.csdn.net/20180530162153858?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180530162153858?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 5、然后将这 3 个I/O 空间地址与3 个文件相连接。即在 CCS 中编译，按F10单步运行程序。步骤如下gif动图所示。  
-![这里写图片描述](http://img-blog.csdn.net/20180530162804861?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180530162804861?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 6、观察程序无误之后，打开Data Memory 窗口和I/O Memory 窗口，以便观察。步骤如下gif动图所示。  
-![这里写图片描述](http://img-blog.csdn.net/20180530163617247?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180530163617247?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 7、在第21 行NOP 处加入断点和探针工具，进行数据文件输入输出，步骤如下gif动图所示。  
-![这里写图片描述](http://img-blog.csdn.net/20180530163944295?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180530163944295?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 8、在 CCS 的File->File I/O… 打开文件输入输出对话框，单击按钮 Add File 添加输入数据文件. 添加前面用matlab
 产生并对文件头部作了修改的数据文件a.dat 和c.dat, 添加之后出现了2 个数据文件的控制对话框。如图，(Wrap Around
 选项可不选，这样CCS 将数据文件中的数据读到结尾时就不再重新从头读起)。步骤如下gif动图所示。  
-![这里写图片描述](http://img-blog.csdn.net/20180530164242518?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180530164242518?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 9、然后再添加输出数据文件。在File Output标签下，单击Add file按钮，出现对话框，将输出  
 文件格式选为 Interger 的dat 文件，在文件名栏中写入新文件名。步骤如下gif动图所示。  
-![这里写图片描述](http://img-blog.csdn.net/20180530164453133?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180530164453133?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 注意, 第3 个数据文件输出控制对话框也出现了. 其中的显示“0”表示现在向该文件输出了0 个数据。
 
 10、接下来的任务是将数据文件与探针点连接起来，即告诉CCS 在探针点处将数据从相  
 应文件中读入，并将相应数据输出给对应的数据文件。步骤如下gif动图所示。  
-![这里写图片描述](http://img-blog.csdn.net/20180530164916292?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180530164916292?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 11、完成后单击 OK 确定，这样就回到 CCS 主界面，单步执行程序到探针处，观察I/O
 端口和数据内存中数据的变化，也可以动画方式执行程序，也可将断点去除， 按F5 执行程序完毕。  
 下图是执行程序到第33 次循环的结果。  
-![这里写图片描述](http://img-blog.csdn.net/20180530165306652?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-![这里写图片描述](http://img-blog.csdn.net/20180530170715275?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180530165306652?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180530170715275?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 12、利用CCS 的图示化功能直接看到输出波形。为了观察更长时间，我们可以将循环次数增  
 加，同时将File I/O 对话框中Input File 标签下两个输入文件的循环读入的选项“Wrap Around”选中即可。步骤如下gif动图所示。  
-![这里写图片描述](http://img-blog.csdn.net/2018053017111480?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-![这里写图片描述](http://img-blog.csdn.net/20180530171353783?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-![这里写图片描述](http://img-blog.csdn.net/20180530171749540?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/2018053017111480?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180530171353783?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180530171749540?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 13、利用CCS 的图示化功能直接看到功率谱。  
-![这里写图片描述](http://img-blog.csdn.net/20180530171619284?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180530171619284?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ##  总结
 

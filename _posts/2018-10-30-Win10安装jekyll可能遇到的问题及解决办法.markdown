@@ -5,9 +5,7 @@ date: 		2018-10-30 18:05:08
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- windows
-- jekyll
+
 ---
 #  Win10安装jekyll可能遇到的问题及解决办法
 

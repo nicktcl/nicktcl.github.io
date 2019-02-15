@@ -5,14 +5,11 @@ date: 		2019-02-08 17:18:12
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- linux
-- ffmpeg
+
 ---
 
-```
     ffplay -f alsa -ac 2 -i hw:1,0 -ar 44100
-```   
+    
 
 -f 设定输出格式   
 -i 设定输入流（hw:1,0为外接的usb音频采集卡设备，hw:1,0的1指的是第一个外部设备，即usb音频采集卡）；   

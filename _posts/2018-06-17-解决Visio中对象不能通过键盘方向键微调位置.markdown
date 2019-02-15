@@ -5,8 +5,7 @@ date: 		2018-06-17 09:58:51
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-    - 电脑技巧
+
 ---
 #  解决Visio中对象不能通过键盘方向键微调位置
 

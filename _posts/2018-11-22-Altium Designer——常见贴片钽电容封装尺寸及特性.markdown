@@ -7,8 +7,7 @@ header-img: "img/post-bg-2015.jpg"
 catalog:	 true
 categories:
 - Altium Designer
-tags:
-- Altium Designer
+
 ---
 ##  什么是钽电容
 

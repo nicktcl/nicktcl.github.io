@@ -1,16 +1,14 @@
 ---
-layout:     post
-title: Altium Designer——原理图导出元件清单
-date: 2018-03-08 18:46:56
-author:     "唐传林"
+layout:		post
+title: 		Altium Designer——原理图导出元件清单
+date: 		2018-03-08 18:46:56
+author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
+catalog:	 true
 categories:
 - Altium Designer
-tags:
-- Altium Designer
+
 ---
-
-
 #  Altium Designer——原理图导出元件清单
 
 ##  前言
@@ -21,13 +19,13 @@ tags:
 ##  方法
 
 1、打开PCB工程，打开PCB文件，如图所示，点击菜单下"报告"选项卡。  
-![这里写图片描述](http://img-blog.csdn.net/20180308183203124?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVGFuZ19DaHVhbmxpbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://img-blog.csdn.net/20180308183203124?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVGFuZ19DaHVhbmxpbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 2、点击Bill of Materials。  
-![这里写图片描述](http://img-blog.csdn.net/20180308183259367?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVGFuZ19DaHVhbmxpbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://img-blog.csdn.net/20180308183259367?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVGFuZ19DaHVhbmxpbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 3、在该对话框就可看到该电路的所有元件的型号，封装，数量等。可在左侧勾选要显示的列。在右下角导出选项下可设置要导出的文件格式，支持导出csv，xls，pdf，txt，html，xml。  
-![这里写图片描述](http://img-blog.csdn.net/20180308184349029?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVGFuZ19DaHVhbmxpbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](https://img-blog.csdn.net/20180308184349029?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVGFuZ19DaHVhbmxpbg==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 4、点击左正下角的“导出”选项即可导出元件清单。
 

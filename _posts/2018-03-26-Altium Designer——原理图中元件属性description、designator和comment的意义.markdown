@@ -7,8 +7,7 @@ header-img: "img/post-bg-2015.jpg"
 catalog:	 true
 categories:
 - Altium Designer
-tags:
-- Altium Designer
+
 ---
 #  Altium Designer——原理图中元件属性description、designator和comment的意义
 

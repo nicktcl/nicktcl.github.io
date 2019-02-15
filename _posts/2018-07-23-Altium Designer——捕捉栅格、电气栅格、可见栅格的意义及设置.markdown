@@ -7,8 +7,7 @@ header-img: "img/post-bg-2015.jpg"
 catalog:	 true
 categories:
 - Altium Designer
-tags:
-- Altium Designer
+
 ---
 #  Altium Designer——捕捉栅格、电气栅格、可视栅格的意义及设置
 
@@ -46,12 +45,12 @@ Grid）：电气栅格的作用是在移动或放置元件时，当元件与周�
 
 1、原理图的可视栅格 、捕获栅格、
 电器栅格的设置，可以在菜单“视图（view）”——>“栅格（grids）”中进行设置。或者在原理图中右键单击，然后选择“选项(options)”——>“栅格（grids）”。一般来说，可视栅格最大，捕获栅格和电气栅格比可视栅格小。  
-![这里写图片描述](http://img-blog.csdn.net/20180723102737318?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-![这里写图片描述](http://img-blog.csdn.net/20180723101513325?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
-![这里写图片描述](http://img-blog.csdn.net/20180723101520850?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180723102737318?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180723101513325?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
+![这里写图片描述](https://img-blog.csdn.net/20180723101520850?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)  
 2、PCB图的可视栅格 、捕获栅格、
 电器栅格的设置，也可以在菜单“视图（view）”-----“栅格”（grids）中进行设置。一般来说，可视栅格最大，捕获栅格和电气栅格比可视栅格小。  
-![这里写图片描述](http://img-blog.csdn.net/20180723103050731?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+![这里写图片描述](https://img-blog.csdn.net/20180723103050731?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RhbmdfQ2h1YW5saW4=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
 
 ###  参考资料：
 

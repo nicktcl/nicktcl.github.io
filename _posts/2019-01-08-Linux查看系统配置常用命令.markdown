@@ -5,11 +5,9 @@ date: 		2019-01-08 15:50:28
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-    - linux
+
 ---
 
-```
     # uname -a # 查看内核/操作系统/CPU信息
     # head -n 1 /etc/issue # 查看操作系统版本
     # cat /proc/cpuinfo # 查看CPU信息
@@ -47,5 +45,5 @@ tags:
     # chkconfig –list # 列出所有系统服务
     # chkconfig –list | grep on # 列出所有启动的系统服务 程序
     # rpm -qa # 查看所有安装的软件包
-```    
+    
 

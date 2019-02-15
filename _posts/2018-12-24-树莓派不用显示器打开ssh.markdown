@@ -5,8 +5,6 @@ date: 		2018-12-24 16:02:57
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- 树莓派
 
 ---
 用软件Win32DiskImager-0.9.5-binary写完树莓派镜像到内存卡后，

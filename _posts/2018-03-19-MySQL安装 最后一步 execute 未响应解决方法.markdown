@@ -5,8 +5,7 @@ date: 		2018-03-19 18:25:53
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- mysql
+
 ---
 #  MySQL安装 最后一步 execute 未响应解决方法
 

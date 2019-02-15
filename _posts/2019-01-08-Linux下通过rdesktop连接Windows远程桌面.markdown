@@ -5,8 +5,7 @@ date: 		2019-01-08 14:11:50
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-    - linux
+
 ---
 ###  前言
 
@@ -30,16 +29,16 @@ Github仓库： [ https://github.com/rdesktop/rdesktop
   * Debian（Ubuntu）系统下执行： 
 
     
-```    
+    
     $ sudo apt-get install rdesktop
-```    
+    
 
   * Centos/RedHat可以通过yum命令在线安装： 
 
     
-```    
+    
     yum -y install rdesktop
-```    
+    
 
 ###  windows开启远程桌面
 
@@ -57,9 +56,9 @@ RemoteApp连接到您的计算机。后面两个选项，“允许任意版本�
 打开命令行，仅需要一条命令：
 
     
-```    
+    
     $ rdesktop -f 192.168.1.112  (这里的ip对应自己windows的ip地址)
-```    
+    
 
 就ok了。
 
@@ -70,7 +69,7 @@ RemoteApp连接到您的计算机。后面两个选项，“允许任意版本�
 linux下执行 ` rdesktop -help ` 可以打开rdesktop的帮助文档。
 
     
-```    
+    
     pi@raspberrypi:~ $ rdesktop -help
     rdesktop: A Remote Desktop Protocol client.
     Version 1.8.3. Copyright (C) 1999-2011 Matthew Chapman et al.
@@ -143,16 +142,16 @@ linux下执行 ` rdesktop -help ` 可以打开rdesktop的帮助文档。
                sc-container-name  Specifies the container name, this is usally the username
                sc-reader-name     Smartcard reader name to use
                sc-card-name       Specifies the card name of the smartcard to use
-```    
+    
 
 ###  命令举例
 
 比如如下命令：
 
     
-```    
+    
     $ rdesktop -f -a 16 -u username -p password  IP  -r sound:on/off -g 1024*768
-```    
+    
 
 说明：  
 1、username和password分别是目标电脑的帐号和密码，-a 16表示位色，最高就是16位；  

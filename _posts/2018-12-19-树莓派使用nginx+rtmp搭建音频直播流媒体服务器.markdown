@@ -5,13 +5,7 @@ date: 		2018-12-19 15:55:07
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- 音频处理
-- 树莓派
-- 流媒体
-- linux
-- nginx
-- rtmp
+
 ---
 ##  前言
 
@@ -55,14 +49,14 @@ armv6l GNU/Linux `
 1、安装所需要的依赖；
 
     
-```    
+    
     sudo apt-get install build-essential libpcre3 libpcre3-dev libssl-dev
-```    
+    
 
 2、安装nginx和rtmp，依此执行以下每一行命令；
 
     
-```    
+    
     wget http://nginx.org/download/nginx-1.11.8.tar.gz
     
     wget https://github.com/arut/nginx-rtmp-module/archive/master.zip
@@ -78,12 +72,12 @@ armv6l GNU/Linux `
     make
     
     sudo make install
-```    
+    
 
 3、执行 ` sudo nano /usr/local/nginx/conf/nginx.conf ` 修改nginx配置文件，添加以下内容。
 
     
-```    
+    
     # /usr/local/nginx/conf/nginx.conf
     # 添加
     rtmp {
@@ -96,28 +90,28 @@ armv6l GNU/Linux `
                }
             }
         }
-```    
+    
 
 4、启动nginx+rtmp流媒体服务器
 
     
-```    
+    
     sudo /usr/local/nginx/sbin/nginx
-```    
+    
 
 5、安装ffmpeg，默认树莓派最新的raspbian系统中已经带有ffmpeg；
 
     
-```    
+    
     sudo apt install ffmpeg
-```    
+    
 
 6、将usb音频采集卡插到树莓派的usb口，启动ffmpeg从usb音频采集卡实时采集实时的外部收音机电台音频，并推流到树莓派上搭建好的nginx+rtmp流媒体服务器。
 
     
-```    
+    
     ffmpeg -f alsa -ac 2 -i hw:1,0 -ar 44100 -f flv rtmp://192.168.10.109/live/audio
-```    
+    
 
 参数说明：主要参数：  
 -f 设定输出格式   

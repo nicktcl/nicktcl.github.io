@@ -8,7 +8,9 @@ catalog:	 true
 categories:
 - 音频
 tags:
-- 音频处理
+- wav
+- pcm
+- 音频
 
 ---
 ###  音频基础知识

@@ -5,8 +5,7 @@ date: 		2018-05-15 22:02:37
 author:		"唐传林"
 header-img: "img/post-bg-2015.jpg"
 catalog:	 true
-tags:
-- 电脑技巧
+
 ---
 #  一键把动态IP自动设置为静态IP
 
@@ -19,21 +18,20 @@ tags:
 将以下脚本保存为“ ` 自动获取IP.bat ` ”，  注意：文本一定要是ANSI编码。
 
     
-```cmd    
+    
     @echo off
     netsh interface ip set address name="以太网" source=dhcp
     netsh interface ip set dns name="以太网" source=dhcp
     
     echo set complete,  press any key exit.
     pause
-```
 
 ##  固定修改
 
 将以下脚本保存为“ ` 设置静态ip.bat ` ”，  注意：文本一定要是ANSI编码。
 
     
-```cmd    
+    
     @echo off
     netsh interface ip set address name="以太网" source=static addr=192.168.1.2 mask=255.255.252.0 gateway=192.168.1.1
     netsh interface ip set dns name="以太网" dhcp
@@ -41,7 +39,7 @@ tags:
     echo set complete,  press any key exit.
     echo
     pause
-```
+
   
 注：  
 需要使用管理员权限才可以运行。  
