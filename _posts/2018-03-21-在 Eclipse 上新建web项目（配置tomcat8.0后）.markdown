@@ -15,8 +15,7 @@ Windows10教育版 64位 （OS内部版本：16299.125）
 
 jdk版本：jdk1.8_111  
 
-Eclipse版本： [ eclipse-jee-oxygen-2-win32-x86_64](http://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2
-/eclipse-inst-win64.exe)  
+Eclipse版本： [ eclipse-jee-oxygen-2-win32-x86_64](http://www.eclipse.org/downloads/download.php?file=/oomph/epp/oxygen/R2/eclipse-inst-win64.exe)  
 
 tomcat版本： [ tomcat8.0](http://archive.apache.org/dist/tomcat/tomcat-8/v8.0.50/bin/apache-tomcat-8.0.50-windows-x64.zip)  
 
