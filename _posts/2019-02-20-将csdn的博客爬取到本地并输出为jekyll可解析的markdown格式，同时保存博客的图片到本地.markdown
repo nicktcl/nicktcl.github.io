@@ -3,8 +3,12 @@ layout:  post
 title:   将csdn的博客爬取到本地并输出为jekyll可解析的markdown格式，同时保存博客的图片到本地
 date:   2019-02-20 11:19:58
 author:  "唐传林"
-header-img: "img/post-bg-2015.jpg"
-catalog:   false
+header-img: "img/post-bg-rwd"
+catalog:   true
+tags:
+- jekyll
+- markdown
+- 个人博客
 
 ---
 ##  前言
