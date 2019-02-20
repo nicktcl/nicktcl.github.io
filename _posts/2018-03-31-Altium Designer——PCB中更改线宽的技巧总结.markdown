@@ -4,8 +4,10 @@ title:   Altium Designer——PCB中更改线宽的技巧总结
 date:   2018-03-31 16:08:10
 author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:   false
+catalog:   true
 categories:
+- Altium Designer
+tags:
 - Altium Designer
 
 ---
