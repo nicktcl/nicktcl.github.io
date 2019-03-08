@@ -4,7 +4,7 @@ title:   树莓派3B连接隐藏wifi网络
 date:   2019-02-20 16:07:24
 author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:   false
+catalog:   true
 
 ---
 连接隐藏wifi可以使用nano编辑器打开wpa-supplicant配置文件：

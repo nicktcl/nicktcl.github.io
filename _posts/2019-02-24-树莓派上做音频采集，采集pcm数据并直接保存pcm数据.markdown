@@ -4,7 +4,7 @@ title:   树莓派上做音频采集，采集pcm数据并直接保存pcm数据
 date:   2019-02-24 16:34:00
 author:  "唐传林"
 header-img: "img/post-bg-2015.jpg"
-catalog:   false
+catalog:   true
 
 ---
 ##  前言
