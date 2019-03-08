@@ -1,0 +1,24 @@
+---
+layout:  post
+title:   树莓派3B连接隐藏wifi网络
+date:   2019-02-20 16:07:24
+author:  "唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:   false
+
+---
+连接隐藏wifi可以使用nano编辑器打开wpa-supplicant配置文件：
+
+    
+    
+    sudo nano /etc/wpa_supplicant/wpa_supplicant.conf 
+    
+
+在文件底部添加：  
+network={  
+ssid=”wifi_name”  
+scan_ssid=1  
+psk=”wifi_password”  
+}  
+关键是ssid_scan=1这一句，加上后才能扫描到隐藏的wifi网络。之后保存退出（ctrl+o保存，ctrl+x退出）nano编辑器，reboot重启即可。
+

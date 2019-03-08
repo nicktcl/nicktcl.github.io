@@ -1,0 +1,17 @@
+---
+layout:  post
+title:   欢迎访问个人博客新站点
+date:   2019-02-20 11:50:05
+author:  "唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:   false
+categories:
+- 博客搭建
+tags:
+- 个人博客
+
+---
+欢迎访问个人博客新站点：  
+[ 唐传林的博客 | Nick Blog ](http://blog.nicktcl.win/)  
+博客两站同步更新。
+
