@@ -114,9 +114,6 @@ page-mathjax: false
 # Friends
 friends: [
     {
-        title: "唐传林的CSDN博客",
-        href: "https://blog.csdn.net/Tang_Chuanlin"
-    },{
         title: "一笑清寒",
         href: "https://www.piqiandong.com/"
     }
