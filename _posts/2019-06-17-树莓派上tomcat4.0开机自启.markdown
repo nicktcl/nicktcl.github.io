@@ -1,0 +1,16 @@
+---
+layout:  post
+title:   树莓派上tomcat4.0开机自启
+date:   2019-06-17 19:12:08
+author:  "唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:   true
+
+---
+在/etc/rc.local中加入:
+
+    
+    
+    /usr/local/tomcat/apache-tomcat-4.1.40/bin/./startup.sh
+    
+

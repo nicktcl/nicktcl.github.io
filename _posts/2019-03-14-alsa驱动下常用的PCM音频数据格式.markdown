@@ -1,0 +1,27 @@
+---
+layout:  post
+title:   alsa驱动下常用的PCM音频数据格式
+date:   2019-03-14 19:46:54
+author:  "唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:   true
+
+---
+
+    S8:     	signed   8 bits，有符号字符 = char，          表示范围 -128~127
+    U8:     	unsigned 8 bits，无符号字符 = unsigned char，表示范围 0~255
+    S16_LE: 	little endian signed 16 bits，小端有符号字 = short，表示范围 -32768~32767
+    S16_BE: 	big endian signed 16 bits，大端有符号字 = short倒序(PPC)，表示范围 -32768~32767
+    U16_LE: 	little endian unsigned 16 bits，小端无符号字 = unsigned short，表示范围 0~65535
+    U16_BE:		big endian unsigned signed 16 bits，大端无符号字 = unsigned short倒序(PPC)，表示范围 0~65535
+    
+
+s是有符号，u是无符号，f是浮点数。  
+be是大端字节序，le是小端字节序。
+
+#####  什么是字节序？
+
+字节序是little-endian还是big-endian。通常均为little-endian。  
+big endian是指低地址存放最高有效字节（MSB，Most Significant Bit），而little
+endian则是低地址存放最低有效字节（LSB，Least Significant Bit）
+

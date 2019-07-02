@@ -1,0 +1,197 @@
+---
+layout:  post
+title:   树莓派3b+串口配置
+date:   2019-06-20 10:10:45
+author:  "唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:   true
+categories:
+- 树莓派                                                                    
+tags:
+- 树莓派3b+
+- 串口配置
+
+---
+#  前言
+
+树莓派从大的方向来说一共出了3代，每一代的CPU外设基本相同，但内核不同，外设里面一共包含两个串口，一个称之为硬件串口（/dev/ttyAMA0），一个称之为mini串口（/dev/ttyS0）。硬件串口由硬件实现，有单独的波特率时钟源，性能高、可靠，mini串口性能低，功能也简单，并且没有波特率专用的时钟源而是由CPU内核时钟提供，因此mini串口有个致命的弱点是：波特率受到内核时钟的影响。内核若在智能调整功耗降低主频时，相应的这个mini串口的波特率便受到牵连了，虽然你可以固定内核的时钟频率，但这显然不符合低碳、节能的口号。在所有的树莓派板卡中都通过排针将一个串口引出来了，目前除了树莓派3代以外
+，引出的串口默认是CPU的那个硬件串口。而在树莓派3代中，由于板载蓝牙模块，因此这个硬件串口被默认分配给与蓝牙模块通信了，而把那个mini串口默认分配给了排针引出的GPIO
+Tx Rx。  
+树莓派的串口默认为串口终端调试使用，如要正常使用串口则需要修改树莓派设置。关闭串口终端调试功能后则不能再通过串口登陆访问树莓派，只能通过ssh或者远程桌面连接树莓派后进行控制。
+
+下图是树莓派3的接口图  
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190619210730334.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9uaWNrdGNsLmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)  
+其中红框中就是引出的串口IO，如果我们需要通过UART外接模块，默认情况下必须得使用性能很低的mini串口了，而且随着内核主频的变化，还会造成波特率的变化导致通信的失败，几乎很难使用。所以我们希望恢复硬件串口与GPIO
+14/15的映射关系，使得我们能够通过GPIO使用高性能的硬件串口来连接我们的串口设备。
+
+#  步骤
+
+###  1、将树莓派3的硬件串口与mini串口默认映射对换
+
+树莓派可以配置文件来修改设备树，我的理解是可以通过配置文件来修改管脚的映射关系，这在许多Cortex-M3内核的单片机中也很常见，可以将同一个串口映射到不同的管脚上，以方便PCB的布线。
+
+为了在树莓派3中通过GPIO使用高性能的硬件串口，我们必须将分配给蓝牙使用的硬件串口与分配给IO排针的mini串口进行对换，这必然会使得蓝牙模块的功能受到影响，但还好，蓝牙并不是必须的。
+
+首先查看有没有相关文件，执行命令
+
+    
+    
+    cd /boot/overlays
+    
+
+![在这里插入图片描述](http://img-blog.csdnimg.cn/2019061921225323.jpg)  
+可以看到有 README 和 pi3-miniuart-bt-overlay.dtb 或者是 pi3-miniuart-bt.dtb
+，后面的缺了(overlay)但是在README中的解释是相同的，因此，认为是同一文件。  
+![在这里插入图片描述](http://img-blog.csdnimg.cn/2019061921193164.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9uaWNrdGNsLmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)  
+README文件中说明了此文件的功能是将树莓派3的蓝牙切换到mini串口(ttyS0),并且恢复硬件串口(ttyAMA0)到GPIO14&15引脚中。  
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190619212048580.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9uaWNrdGNsLmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)
+
+###  2、查看并修改串口映射关系
+
+首先在树莓派命令终端中通过命令查看树莓派3当前的串口映射关系，执行命令
+
+    
+    
+    ls -l /dev
+    
+
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190619212348278.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9uaWNrdGNsLmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)  
+红框里面表示串口映射，有的可能只显示1个，没关系，修改之后两个就都显示出来了。  
+红色框中体现的应该是一种映射关系，此处暂时没有做深究，简单理解 serial0
+就是GPIO映射的串口，此时GPIO映射的串口是默认的/dev/ttyS0这个mini串口。
+
+###  3、现在来修改配置文件
+
+执行命令
+
+    
+    
+    sudo nano /boot/config.txt
+    
+
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190619212857719.jpg)  
+在该文件中加一行代码
+
+    
+    
+    dtoverlay=pi3-miniuart-bt
+    
+
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190619212916730.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9uaWNrdGNsLmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)  
+然后"ctrl+o"保存文件， 执行 ` sudo reboot ` 重启树莓派，使修改生效。 ` 一定要保存然后重启 ` 。
+
+###  4、再通过 ls -l /dev 命令查看修改后的映射关系
+
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190619213116739.png)  
+对比修改前的关系，可以看出serial0和serial1 与 ttyAMA0和ttyS0的映射关系对换完成了，也就是ttyAMA0映射到了引出的GPIO
+Tx(14) Rx(15) 引脚上。
+
+###  5、禁用串口的控制台功能
+
+前面的步骤已经交换了硬件串口与mini串口的映射关系，但现在想使用树莓派外接串口模块进行通信还不行，因为树莓派IO引出的串口默认是用来做控制台使用的，它的初衷是为了在没有网络接口时，通过串口对树莓派进行相关的配置。因此需要禁用这个默认功能，使得串口为我们自由使用。
+
+在树莓派命令窗口中分别通过如下两个命令停止和禁用串口的控制台功能。  
+由于我们前面已经交换了串口的映射关系，因此这里注意是ttyAMA0。
+
+    
+    
+    sudo systemctl stop serial-getty@ttyAMA0.service
+    
+    
+    
+    sudo systemctl disable serial-getty@ttyAMA0.service
+    
+
+再执行命令：
+
+    
+    
+    sudo nano /boot/cmdline.txt
+    
+
+然后看到里面类似如下的内容  
+` dwc_otg.lpm_enable=0 console=serial0,115200 console=tty1 root=/dev/mmcblk0p2
+rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait `  
+删除语句 console=serial0,115200  
+剩下的内容类似如下：  
+` dwc_otg.lpm_enable=0 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4
+elevator=deadline fsck.repair=yes rootwait `  
+然后重新启动树莓派，使修改生效。 ` 一定要保存然后重启 ` 。
+
+####  到这里，树莓派3b+的串口配置就配置了可以直接用了，下面我们用python-serial模块做一个“树莓派串口与电脑usb-ttl串口通信”的测试。
+
+1、首先将树莓派的串口和usb-TTL串口连接好，并将usb-TTL串口插到电脑端上。  
+2、安装python-serial模块，一般都是树莓派系统默认已经安装好，可以直接跳过该步骤。
+
+    
+    
+     sudo apt-get install python-serial  
+    
+
+3、输入 ` phthon3 ` 启动python IDE。  
+4、创建serial实例ser，端口为 ‘/dev/ttyAMA0’，波特率设置为115200bps，第三个为校验位，可以不写。
+
+    
+    
+    >>> import serial
+    >>> ser = serial.Serial('/dev/ttyAMA0',115200)
+    
+
+5、检验串口是否打开，若未打开则输入 ser.open() 打开
+
+    
+    
+    >>> ser.isOpen()  
+    True 
+    
+
+6、电脑上打开设备管理器查看usb-TTL的串口号。  
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190619215016139.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9uaWNrdGNsLmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)  
+7、电脑上打开串口调试助手，选择刚刚查看的串口，波特率选择“115200”。  
+我用的串口助手是“STC-ISP下载软件”里面的串口助手。  
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190620094101739.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9uaWNrdGNsLmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)  
+8、然后我们在树莓派的python里发消息，检测发送是否正常：
+
+    
+    
+    >>> ser.write(b'Raspberry pi')
+    12
+    
+
+![在这里插入图片描述](http://img-blog.csdnimg.cn/2019062009452744.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9uaWNrdGNsLmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)  
+可以看到正常接收。  
+9、最后我们写一个python脚本代码，实现串口的发送和接收：
+
+    
+    
+    # -*- coding: utf-8 -*
+    import serial
+    import time
+    ser = serial.Serial('/dev/ttyAMA0', 115200)
+    if ser.isOpen == False:
+        ser.open()                # 打开串口
+    ser.write(b"Raspberry pi is ready")
+    try:
+        while True:
+            size = ser.inWaiting()               # 获得缓冲区字符
+            if size != 0:
+                response = ser.read(size)        # 读取内容并显示
+                print response        
+                ser.flushInput()                 # 清空接收缓存区
+                time.sleep(0.5)                  # 软件延时
+    except KeyboardInterrupt:
+        ser.close()
+    
+
+将以上代码保存为“test_uart_python.py”，然后执行 ` python test_uart_python.py `
+运行树莓派端的python程序，我们试着发送一串消息过去。
+
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190620100851991.gif)
+
+#  参考文献
+
+1、 [ 浅尝树莓派3之串口配置 - qq_31396093的博客 - CSDN博客](http://blog.csdn.net/qq_31396093/article/details/58640995)  
+2、 [ 树莓派3b与电脑串口互相通信进行数据传输的配置过程 - 全都不是泡沫 - CSDN博客](http://blog.csdn.net/qq_36326623/article/details/79780061)  
+3、 [ 树莓派通过串口接发数据（serial版） - 姜亚轲的博客 - CSDN博客](http://blog.csdn.net/weixin_41656968/article/details/80085836)  
+4、 [ WiringPi/serialRead.c at master · WiringPi/WiringPi](http://github.com/WiringPi/WiringPi/blob/master/examples/serialRead.c)
+

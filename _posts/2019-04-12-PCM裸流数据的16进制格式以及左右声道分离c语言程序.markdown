@@ -1,0 +1,79 @@
+---
+layout:  post
+title:   PCM裸流数据的16进制格式以及左右声道分离c语言程序
+date:   2019-04-12 20:14:09
+author:  "唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:   true
+
+---
+##  前言
+
+本文讲解PCM裸流数据的存储格式。
+
+##  本文PCM音频参数
+
+    
+    
+     声道数：			2
+     采样位数：			little endian signed 16 bits，
+     					小端有符号字 = short，表示范围 -32768~32767
+     采样频率：			44100Hz
+    
+
+##  PCM数据存储格式（小端有符号字）
+
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190412193232504.jpeg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9uaWNrdGNsLmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)
+
+##  UltraEdit下查看实际的16进制数据（小端有符号字）
+
+注意：在notepad++下查看到的16进制数据不对，暂时来找到原因。
+
+点击图片可放大看。  
+![在这里插入图片描述](http://img-blog.csdnimg.cn/2019041220095250.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9uaWNrdGNsLmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)
+
+##  左右声道分离c语言程序
+
+    
+    
+    //gcc -o split_PCM_channle split_PCM_channle.c
+    //./split_PCM_channle
+    
+    #include <stdio.h>
+    #include <stdlib.h>
+    
+    int simplest_pcm16le_split(char *url){  
+        FILE *fp=fopen(url,"rb+");  
+        FILE *fp1=fopen("output_l.pcm","wb+");  
+        FILE *fp2=fopen("output_r.pcm","wb+");  
+      
+        unsigned char *sample=(unsigned char *)malloc(4);  
+      
+        while(!feof(fp)){  
+            fread(sample,1,4,fp);  
+            //L  
+            fwrite(sample,1,2,fp1);  
+            //R  
+            fwrite(sample+2,1,2,fp2);  
+        }  
+      
+        free(sample);  
+        fclose(fp);  
+        fclose(fp1);  
+        fclose(fp2);  
+        return 0;  
+    }  
+    
+    void main (void)
+    {
+        char *url = "./single_sine.pcm";
+        simplest_pcm16le_split(url);
+    }
+    
+    
+
+##  参考资料
+
+1、 [ PCM数据格式 - FlyingPenguin - 简书 ](http://www.jianshu.com/p/e568f94cdf6a)  
+2、 [ 视音频数据处理入门：PCM音频采样数据处理 - 简书 ](http://www.jianshu.com/p/43fd50f0a8ba)
+

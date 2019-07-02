@@ -1,0 +1,68 @@
+---
+layout:  post
+title:   EndNote参考文献管理软件
+date:   2019-06-20 10:12:48
+author:  "唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:   true
+
+---
+##  什么是 EndNote ？
+
+EndNote 是一个著名的参考文献管理软件，用来创建个人参考文献库，并且可以加入文本、图像、表格和方程式等内容及链接等信息，能够与 Microsoft
+Word 完美无缝链接，方便地插入所引用文献并按照格式进行编排。  
+EndNote
+有着易用的界面和强大的文献搜索功能，对中文也支持良好，是科研工作者不可多得的好助手，无论是文献的检索、管理、文献全文的自动获取，还是论文写作过程中的文献引用插入、SCI
+期刊模板等方面，均可为用户提供强大帮助。  
+有数以百万计的研究人员、学生和图书管理员使用，它能方便地扩展任何语言参考书目，允许你创建任意大小的文献库。通过EndNote可进行文献批量下载和管理、写作论文时添加索引、分析某篇文献的引文索引、分析某领域或者学术课题的经典文献地位等。
+
+##  主要功能
+
+在线搜索文献：直接从网络搜索相关文献并导入到EndNote的文献库内。  
+建立文献库和图片库：收藏，管理和搜索个人文献和图片、表格。  
+定制文稿：直接在Word中格式化引文和图形，利用文稿模板直接书写合乎杂志社要求的文章。  
+引文编排：可以自动帮助我们编辑参考文献的格式。  
+文献检索工具：可以在软件界面搜索多个数据库，而无需逐一打开数据库网站。  
+文摘及全文的管理工具：可以帮助我们高效管理大量的文献信息。  
+引文编排工具：可以自动帮助我们编辑参考文献的格式。  
+文献共享与协作工具。
+
+##  下载地址
+
+  * 官网： [ http://www.endnote.com/ ](http://www.endnote.com/)
+
+  * 官方最新版下载：   
+Windows: [ http://download.endnote.com/downloads/X8/ENX8Inst.exe](http://download.endnote.com/downloads/X8/ENX8Inst.exe)  
+Mac: [ http://download.endnote.com/downloads/X8/EndNoteX8Installer.dmg](http://download.endnote.com/downloads/X8/EndNoteX8Installer.dmg)  
+旧版本下载： [ EndNote Installer download](http://support.clarivate.com/Endnote/s/article/EndNote-Installer-download?language=en_US)
+
+  * EndNote X8.2 zh_CN 简体中文汉化包+Key+安装包 2018.02.22修正版   
+石墨直链： [ EndNote_X8.2_zh_CN_Update_Setup.zip ](http://dn-shimo-attachment.qbox.me/l8CA4j6SdgEYNpTP/EndNote_X8.2_zh_CN_Update_Setup.zip)  
+百度网盘： [ http://pan.baidu.com/s/1htgc4HQ ](http://pan.baidu.com/s/1htgc4HQ)
+（笔者使用的是该版本）  
+腾讯微云： [ http://share.weiyun.com/4f23dde764a83f5f4cc7ec52408fed52](http://share.weiyun.com/4f23dde764a83f5f4cc7ec52408fed52)
+
+  * 以下为旧版本 
+
+EndNote X8.2 仅zh_CN简体中文汉化包+Key  
+石墨直链： [ EndNote_X8.2_zh_CN.rar ](http://dn-shimo-attachment.qbox.me/6dVg7lvt6y8s0gFJ/EndNote_X8.2_zh_CN.rar)
+
+EndNote X8.2 zh_CN 简体中文汉化包+Key+安装包  
+百度网盘： [ http://pan.baidu.com/s/1i6A22CP ](http://pan.baidu.com/s/1i6A22CP)
+
+EndNote X8.1汉化百度网盘： [ http://pan.baidu.com/s/1nwhRSNJ](http://pan.baidu.com/s/1nwhRSNJ)
+
+##  EndNote X8 安装和使用指引
+
+请看压缩包中“EndNote_X8.2_zh_CN_Update”文件夹下的“EndNote X8 安装和使用指引.pdf”文件，里面写得很详细。
+
+##  软件界面
+
+####  致谢
+
+感谢吾爱破解论坛 @落尘之木 提供的原创汉化以及以上资料的整理。
+
+####  参考资料
+
+1、 [ 【2018.02.22修正版】文献管理软件EndNote 8.2汉化简体中文版 Windows 落尘之木 - 『原创发布区』 - 吾爱破解 -LCG - LSG |安卓破解|病毒分析|破解软件|www.52pojie.cn](http://www.52pojie.cn/thread-685529-1-1.html)
+

@@ -1,0 +1,138 @@
+---
+layout:  post
+title:   树莓派上编译安装fftw
+date:   2019-04-17 21:22:09
+author:  "唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:   true
+
+---
+##  什么是FFTW？
+
+FFTW ( the Faster Fourier Transform in the West)
+是一个快速计算离散傅里叶的标准C语言程序集，其由MIT的M.Frigo 和S. Johnson
+开发。可计算一维或多维实和复数据以及任意规模的DFT。FFTW 还包含对共享和分布式存储系统的并行变换，它可自动适应你的机器，
+缓存，存储大小，寄存器个数。可以在树莓派、Android这些移动端装上FFTW库便于将数据进行频域变换、处理。以下是具体安装和配置过程。  
+  
+
+##  安装过程
+
+1、首先 [ 点击这里下载fftw-3.3.8.tar.gz ](http://www.fftw.org/download.html)
+这个安装包，并通过远程桌面、scp、ftp或samba等传输到树莓派上。
+
+2、使用 ` tar zxvf fftw-3.3.8.tar.gz ` 命令解压文件。
+
+3、然后执行 ` sudo mkdir /usr/local/fftw ` 在/usr/local目录下创建fftw目录，也就是这个库的安装目录。
+
+4、执行命令 ` cd fftw-3.3.8 ` 进入到解压后的fftw库目录里。
+
+5、  依此执行以下每条命令。  （需要编译安装两次。第一次编译安装单精度的，第二次编译安装双精度的。）  此过程比较漫长，需要耐心等待。
+
+    
+    
+    ./configure --prefix=/usr/local/fftw --disable-fortran
+    make
+    sudo make install
+    
+    make clean
+    
+    ./configure --enable-float  --prefix=/usr/local/fftw --disable-fortran
+    make
+    sudo make install
+    
+
+6、进入到/usr/local/fftw会有四个文件夹。  
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190417211933173.png)  
+  
+
+##  安装完成后进行测试
+
+7、编写测试程序test_fftw.cpp进行验证，以下是测试代码。
+
+    
+    
+    //test_fftw.cpp
+    
+    #include <complex>
+    #include <fftw3.h>
+    #include <math.h>
+    #include <iostream>
+    
+    #define N 10
+    
+    using namespace std;
+    
+    int main(int argc, char* argv[])
+    {
+    	fftw_complex in[N], out[N];
+    	fftw_plan p;
+    	
+    	p = fftw_plan_dft_1d(N, in, out, FFTW_FORWARD, FFTW_MEASURE);
+    	for(int i = 0; i < N; i++)
+    	{
+    		in[i][0] = i;
+    		in[i][1] = 0.0;
+    	}
+    	
+    	fftw_execute(p);
+    	
+    	for(int i = 0; i < N; i++)
+    	{
+    		cout<< out[i][0] << " " << out[i][1] << endl;
+    	}
+    	
+    	complex<double> temp = 0.0;
+    	for(int k = 0; k < N; k++)
+    	{
+    		double pi = 4 * atan(1.0);
+    		temp += exp(complex<double>(0.0, -2.0 * pi * 3 * k / N)) * complex<double>(in[k][0], in[k][1]);
+    	}
+    	
+    	cout << "out[3] is " << temp << endl;
+    	
+    	fftw_complex out1[N];
+    	fftw_plan p1;
+    	
+    	p1 = fftw_plan_dft_1d(N, out1, in, FFTW_BACKWARD, FFTW_MEASURE);
+    	
+    	for(int i = 0; i < N; i++)
+    	{
+    		out1[i][0] = out[i][0];
+    		out1[i][1] = out[i][1];
+    	}
+    	
+    	fftw_execute(p1);
+    	
+    	for(int i = 0; i < N; i++)
+    	{
+    		cout << in[i][0] << " " << in[i][1] << endl;
+    	}
+    	
+    	fftw_destroy_plan(p);
+    	fftw_destroy_plan(p1);
+    	
+    	return 0;
+    }
+    
+
+8、执行以下命令编译程序。
+
+    
+    
+    g++ test_fftw.cpp -o test_fftw -lfftw3 -I /usr/local/fftw/include -L /usr/local/fftw/lib
+    
+
+9、执行命令 ` ./test_fftw ` 运行测试程序，结果如下。  
+![在这里插入图片描述](http://img-blog.csdnimg.cn/20190417212035584.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9uaWNrdGNsLmJsb2cuY3Nkbi5uZXQ=,size_16,color_FFFFFF,t_70)  
+从结果得知库已安装成功，以上是整个树莓派安装fftw库的全过程 。
+
+##  参考资料
+
+1、 [ 快速傅里叶变换 - MATLAB fft - MathWorks 中国](http://ww2.mathworks.cn/help/matlab/ref/fft.html)  
+2、 [ FFTW主页 ](http://www.fftw.org/)  
+3、 [ fftw 编译安装说明 - 超算小站 - CSDN博客](http://blog.csdn.net/sowhatgavin/article/details/71036878)  
+4、 [ 树莓派安装fftw - zhangjun62的博客 - CSDN博客](http://blog.csdn.net/sowhatgavin/article/details/71036878)  
+5、 [ 关于FFTW3和NE10在树莓派2上执行FFT和IFFT的耗时比较 - 程序园 ](http://www.voidcn.com/article/p
+-cfwpwfwz-bmb.html)  
+6、 [ gpu-fftw/gpu_fftw: Run FFTW3 programs with Raspberry Pi GPU - fast ffts!](http://github.com/gpu-fftw/gpu_fftw)
+

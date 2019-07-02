@@ -1,0 +1,16 @@
+---
+layout:  post
+title:   linux下批量生成文件命令
+date:   2019-04-17 21:39:57
+author:  "唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:   true
+
+---
+执行以下命令即可生成文件名为‘filename1.txt’，‘filename2.txt’，……‘filename20.txt’的20 个txt文件。
+
+    
+    
+    touch filename{1..20}.txt
+    
+

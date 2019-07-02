@@ -1,0 +1,122 @@
+---
+layout:  post
+title:   树莓派上安装tomcat4.0
+date:   2019-06-17 16:10:43
+author:  "唐传林"
+header-img: "img/post-bg-2015.jpg"
+catalog:   true
+
+---
+1、下载安装包：
+
+    
+    
+    wget http://archive.apache.org/dist/tomcat/tomcat-4/v4.1.40/bin/apache-tomcat-4.1.40.tar.gz
+    
+
+2、新建tomcat存放的目录
+
+    
+    
+    mkdir /usr/local/tomcat
+    
+
+3、拷贝下载好的 apache-tomcat-7.0.77.tar.gz 到 tomcat目录下
+
+    
+    
+    cp apache-tomcat-4.1.40.tar.gz /usr/local/tomcat/
+    
+    
+    
+    tar zxvf apache-tomcat-4.1.40.tar.gz
+    
+
+4、进入解压的tomcat包的bin目录，并启动tomcat
+
+    
+    
+    cd /usr/local/tomcat/apache-tomcat-4.1.40/bin
+    
+    
+    
+    sudo ./startup.sh
+    
+
+或者： ` sudo ./catalina.sh start `
+
+提示：  
+The JAVA_HOME environment variable is not defined  
+This environment variable is needed to run this program
+
+执行“java -version”提示：  
+java version “1.8.0_65”  
+Java™ SE Runtime Environment (build 1.8.0_65-b17)  
+Java HotSpot™ Client VM (build 25.65-b01, mixed mode)
+
+5、为tomcat添加java环境变量：  
+打开tomcat的bin目录下面的 setclasspath.sh文件。
+
+    
+    
+    sudo nano setclasspath.sh
+    
+
+在开头添加以下部分，路径自己根据自己的修改 。
+
+    
+    
+    export JAVA_HOME=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt
+    export JRE_HOME=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre
+    
+
+6、重新启动tomcat
+
+    
+    
+    cd /usr/local/tomcat/apache-tomcat-4.1.40/bin
+    
+    
+    
+    sudo ./startup.sh
+    
+
+或者： ` sudo ./catalina.sh start `
+
+7、电脑端浏览器访问http://192.168.1.117:8080/index.jsp  
+可正常看到tomcat默认页面
+
+8、配置 tomcat 帐号密码权限（登陆使用Web管理界面）  
+修改tomcat下的配置文件 tomcat-users.xml
+
+    
+    
+    sudo nano /usr/local/tomcat/apache-tomcat-4.1.40/conf/tomcat-users.xml
+    
+    <?xml version='1.0' encoding='utf-8'?>
+    <tomcat-users>
+      <role rolename="role1"/>
+      <role rolename="admin-script"/>
+      <role rolename="tomcat"/>
+      <role rolename="manager"/>
+      <role rolename="admin"/>
+      <role rolename="admin-gui"/>
+      <role rolename="manager-script"/>
+      <role rolename="manager-gui"/>
+      <user username="role1" password="tomcat" roles="role1"/>
+      <user username="tomcat" password="tomcat" roles="tomcat,admin,manager,manager$
+      <user username="both" password="tomcat" roles="tomcat,role1"/>
+    </tomcat-users>
+    
+
+保存退出，重启tomcat
+
+    
+    
+    cd /usr/local/tomcat/apache-tomcat-4.1.40/bin
+    
+    
+    
+    sudo ./startup.sh
+    
+
